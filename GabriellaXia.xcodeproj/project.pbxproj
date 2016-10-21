@@ -9,12 +9,35 @@
 /* Begin PBXBuildFile section */
 		98C75F6D1DB5F0E50061DED6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F6C1DB5F0E50061DED6 /* main.m */; };
 		98C75F701DB5F0E50061DED6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F6F1DB5F0E50061DED6 /* AppDelegate.m */; };
-		98C75F731DB5F0E50061DED6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F721DB5F0E50061DED6 /* ViewController.m */; };
-		98C75F761DB5F0E50061DED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C75F741DB5F0E50061DED6 /* Main.storyboard */; };
 		98C75F781DB5F0E50061DED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C75F771DB5F0E50061DED6 /* Assets.xcassets */; };
 		98C75F7B1DB5F0E50061DED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C75F791DB5F0E50061DED6 /* LaunchScreen.storyboard */; };
 		98C75F861DB5F0E50061DED6 /* GabriellaXiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F851DB5F0E50061DED6 /* GabriellaXiaTests.m */; };
 		98C75F911DB5F0E50061DED6 /* GabriellaXiaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F901DB5F0E50061DED6 /* GabriellaXiaUITests.m */; };
+		98C75FD31DB77A070061DED6 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75FC71DB77A070061DED6 /* BaseViewController.m */; };
+		98C75FD41DB77A070061DED6 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C75FC81DB77A070061DED6 /* BaseViewController.xib */; };
+		98C75FD51DB77A070061DED6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75FCC1DB77A070061DED6 /* HomeViewController.m */; };
+		98C75FD61DB77A070061DED6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C75FCD1DB77A070061DED6 /* HomeViewController.xib */; };
+		98C75FD71DB77A070061DED6 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75FCF1DB77A070061DED6 /* MainTabBarController.m */; };
+		98C75FE11DB77A170061DED6 /* NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75FDB1DB77A170061DED6 /* NavigationManager.m */; };
+		98C75FE21DB77A170061DED6 /* DataSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75FE01DB77A170061DED6 /* DataSaveTool.m */; };
+		98C75FE61DB77BB00061DED6 /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75FE51DB77BB00061DED6 /* AppConstants.m */; };
+		98C75FEA1DB7B7A10061DED6 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75FE81DB7B7A10061DED6 /* DiscoverViewController.m */; };
+		98C75FEB1DB7B7A10061DED6 /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C75FE91DB7B7A10061DED6 /* DiscoverViewController.xib */; };
+		98C75FEF1DB7B7BB0061DED6 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75FED1DB7B7BB0061DED6 /* MoreViewController.m */; };
+		98C75FF01DB7B7BB0061DED6 /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C75FEE1DB7B7BB0061DED6 /* MoreViewController.xib */; };
+		98C75FF41DB7B7CF0061DED6 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75FF21DB7B7CF0061DED6 /* MeViewController.m */; };
+		98C75FF51DB7B7CF0061DED6 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C75FF31DB7B7CF0061DED6 /* MeViewController.xib */; };
+		98C75FF91DB7B7E40061DED6 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75FF71DB7B7E40061DED6 /* MessageViewController.m */; };
+		98C75FFA1DB7B7E40061DED6 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C75FF81DB7B7E40061DED6 /* MessageViewController.xib */; };
+		98C75FFE1DB7B9CB0061DED6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75FFC1DB7B9CB0061DED6 /* LoginViewController.m */; };
+		98C75FFF1DB7B9CB0061DED6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C75FFD1DB7B9CB0061DED6 /* LoginViewController.xib */; };
+		98C760031DB7B9E10061DED6 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C760011DB7B9E10061DED6 /* RegisterViewController.m */; };
+		98C760041DB7B9E10061DED6 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C760021DB7B9E10061DED6 /* RegisterViewController.xib */; };
+		98C760081DB7C0180061DED6 /* ThemeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C760071DB7C0180061DED6 /* ThemeImageView.m */; };
+		98C7600B1DB7C0320061DED6 /* ThemeLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C7600A1DB7C0320061DED6 /* ThemeLable.m */; };
+		98C7600E1DB7C0760061DED6 /* ThemeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C7600D1DB7C0760061DED6 /* ThemeButton.m */; };
+		98C760111DB7C0B10061DED6 /* ThemeManeger.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C760101DB7C0B10061DED6 /* ThemeManeger.m */; };
+		DFBFEB02D676BB03A0D35BE7 /* libPods-GabriellaXia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFDB452BE2B6D377238ADB9 /* libPods-GabriellaXia.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		487BD6827DD89F3EE97DA90A /* Pods-GabriellaXia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GabriellaXia.release.xcconfig"; path = "Pods/Target Support Files/Pods-GabriellaXia/Pods-GabriellaXia.release.xcconfig"; sourceTree = "<group>"; };
+		623AE4C252233D4CD424C1CC /* Pods-GabriellaXia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GabriellaXia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GabriellaXia/Pods-GabriellaXia.debug.xcconfig"; sourceTree = "<group>"; };
+		7CFDB452BE2B6D377238ADB9 /* libPods-GabriellaXia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GabriellaXia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C75F681DB5F0E50061DED6 /* GabriellaXia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GabriellaXia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C75F6C1DB5F0E50061DED6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98C75F6E1DB5F0E50061DED6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		98C75F6F1DB5F0E50061DED6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		98C75F711DB5F0E50061DED6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		98C75F721DB5F0E50061DED6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		98C75F751DB5F0E50061DED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98C75F771DB5F0E50061DED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98C75F7A1DB5F0E50061DED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98C75F7C1DB5F0E50061DED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +74,48 @@
 		98C75F8C1DB5F0E50061DED6 /* GabriellaXiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GabriellaXiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C75F901DB5F0E50061DED6 /* GabriellaXiaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GabriellaXiaUITests.m; sourceTree = "<group>"; };
 		98C75F921DB5F0E50061DED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98C75FB01DB73E9D0061DED6 /* ConstantDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstantDefinition.h; sourceTree = "<group>"; };
+		98C75FB11DB73EF30061DED6 /* Conment.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Conment.pch; sourceTree = "<group>"; };
+		98C75FC61DB77A070061DED6 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		98C75FC71DB77A070061DED6 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		98C75FC81DB77A070061DED6 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		98C75FCB1DB77A070061DED6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		98C75FCC1DB77A070061DED6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		98C75FCD1DB77A070061DED6 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		98C75FCE1DB77A070061DED6 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		98C75FCF1DB77A070061DED6 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		98C75FDA1DB77A170061DED6 /* NavigationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationManager.h; sourceTree = "<group>"; };
+		98C75FDB1DB77A170061DED6 /* NavigationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationManager.m; sourceTree = "<group>"; };
+		98C75FDF1DB77A170061DED6 /* DataSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSaveTool.h; sourceTree = "<group>"; };
+		98C75FE01DB77A170061DED6 /* DataSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSaveTool.m; sourceTree = "<group>"; };
+		98C75FE41DB77BB00061DED6 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		98C75FE51DB77BB00061DED6 /* AppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstants.m; sourceTree = "<group>"; };
+		98C75FE71DB7B7A10061DED6 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		98C75FE81DB7B7A10061DED6 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		98C75FE91DB7B7A10061DED6 /* DiscoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
+		98C75FEC1DB7B7BB0061DED6 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		98C75FED1DB7B7BB0061DED6 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		98C75FEE1DB7B7BB0061DED6 /* MoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
+		98C75FF11DB7B7CF0061DED6 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		98C75FF21DB7B7CF0061DED6 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		98C75FF31DB7B7CF0061DED6 /* MeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
+		98C75FF61DB7B7E40061DED6 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		98C75FF71DB7B7E40061DED6 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		98C75FF81DB7B7E40061DED6 /* MessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		98C75FFB1DB7B9CB0061DED6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		98C75FFC1DB7B9CB0061DED6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		98C75FFD1DB7B9CB0061DED6 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		98C760001DB7B9E10061DED6 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		98C760011DB7B9E10061DED6 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		98C760021DB7B9E10061DED6 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		98C760061DB7C0180061DED6 /* ThemeImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeImageView.h; sourceTree = "<group>"; };
+		98C760071DB7C0180061DED6 /* ThemeImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeImageView.m; sourceTree = "<group>"; };
+		98C760091DB7C0320061DED6 /* ThemeLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeLable.h; sourceTree = "<group>"; };
+		98C7600A1DB7C0320061DED6 /* ThemeLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeLable.m; sourceTree = "<group>"; };
+		98C7600C1DB7C0760061DED6 /* ThemeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeButton.h; sourceTree = "<group>"; };
+		98C7600D1DB7C0760061DED6 /* ThemeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeButton.m; sourceTree = "<group>"; };
+		98C7600F1DB7C0B10061DED6 /* ThemeManeger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManeger.h; sourceTree = "<group>"; };
+		98C760101DB7C0B10061DED6 /* ThemeManeger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManeger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFBFEB02D676BB03A0D35BE7 /* libPods-GabriellaXia.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +151,8 @@
 				98C75F841DB5F0E50061DED6 /* GabriellaXiaTests */,
 				98C75F8F1DB5F0E50061DED6 /* GabriellaXiaUITests */,
 				98C75F691DB5F0E50061DED6 /* Products */,
+				D365521377D7A105252EECE2 /* Pods */,
+				D7CA245161DBB2981A3FC68F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +169,17 @@
 		98C75F6A1DB5F0E50061DED6 /* GabriellaXia */ = {
 			isa = PBXGroup;
 			children = (
+				98C75FC41DB77A070061DED6 /* ViewController */,
+				98C75FD81DB77A170061DED6 /* Class */,
+				98C75FE31DB77A1E0061DED6 /* SDk */,
 				98C75F6E1DB5F0E50061DED6 /* AppDelegate.h */,
 				98C75F6F1DB5F0E50061DED6 /* AppDelegate.m */,
-				98C75F711DB5F0E50061DED6 /* ViewController.h */,
-				98C75F721DB5F0E50061DED6 /* ViewController.m */,
-				98C75F741DB5F0E50061DED6 /* Main.storyboard */,
+				98C75FB01DB73E9D0061DED6 /* ConstantDefinition.h */,
+				98C75FB11DB73EF30061DED6 /* Conment.pch */,
 				98C75F771DB5F0E50061DED6 /* Assets.xcassets */,
 				98C75F791DB5F0E50061DED6 /* LaunchScreen.storyboard */,
 				98C75F7C1DB5F0E50061DED6 /* Info.plist */,
+				98C760121DB7D03D0061DED6 /* Image */,
 				98C75F6B1DB5F0E50061DED6 /* Supporting Files */,
 			);
 			path = GabriellaXia;
@@ -140,6 +211,180 @@
 			path = GabriellaXiaUITests;
 			sourceTree = "<group>";
 		};
+		98C75FC41DB77A070061DED6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				98C75FC51DB77A070061DED6 /* BaseViewController */,
+				98C75FCE1DB77A070061DED6 /* MainTabBarController.h */,
+				98C75FCF1DB77A070061DED6 /* MainTabBarController.m */,
+				98C75FCA1DB77A070061DED6 /* Home */,
+				98C75FC91DB77A070061DED6 /* Discover */,
+				98C75FD21DB77A070061DED6 /* More */,
+				98C75FD01DB77A070061DED6 /* Me */,
+				98C75FD11DB77A070061DED6 /* Message */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		98C75FC51DB77A070061DED6 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				98C75FC61DB77A070061DED6 /* BaseViewController.h */,
+				98C75FC71DB77A070061DED6 /* BaseViewController.m */,
+				98C75FC81DB77A070061DED6 /* BaseViewController.xib */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		98C75FC91DB77A070061DED6 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				98C75FE71DB7B7A10061DED6 /* DiscoverViewController.h */,
+				98C75FE81DB7B7A10061DED6 /* DiscoverViewController.m */,
+				98C75FE91DB7B7A10061DED6 /* DiscoverViewController.xib */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		98C75FCA1DB77A070061DED6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				98C75FCB1DB77A070061DED6 /* HomeViewController.h */,
+				98C75FCC1DB77A070061DED6 /* HomeViewController.m */,
+				98C75FCD1DB77A070061DED6 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		98C75FD01DB77A070061DED6 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				98C75FF11DB7B7CF0061DED6 /* MeViewController.h */,
+				98C75FF21DB7B7CF0061DED6 /* MeViewController.m */,
+				98C75FF31DB7B7CF0061DED6 /* MeViewController.xib */,
+				98C75FFB1DB7B9CB0061DED6 /* LoginViewController.h */,
+				98C75FFC1DB7B9CB0061DED6 /* LoginViewController.m */,
+				98C75FFD1DB7B9CB0061DED6 /* LoginViewController.xib */,
+				98C760001DB7B9E10061DED6 /* RegisterViewController.h */,
+				98C760011DB7B9E10061DED6 /* RegisterViewController.m */,
+				98C760021DB7B9E10061DED6 /* RegisterViewController.xib */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		98C75FD11DB77A070061DED6 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				98C75FF61DB7B7E40061DED6 /* MessageViewController.h */,
+				98C75FF71DB7B7E40061DED6 /* MessageViewController.m */,
+				98C75FF81DB7B7E40061DED6 /* MessageViewController.xib */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		98C75FD21DB77A070061DED6 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				98C75FEC1DB7B7BB0061DED6 /* MoreViewController.h */,
+				98C75FED1DB7B7BB0061DED6 /* MoreViewController.m */,
+				98C75FEE1DB7B7BB0061DED6 /* MoreViewController.xib */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		98C75FD81DB77A170061DED6 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				98C760051DB7BFA60061DED6 /* Theme */,
+				98C75FD91DB77A170061DED6 /* Manage */,
+				98C75FDC1DB77A170061DED6 /* Model */,
+				98C75FDD1DB77A170061DED6 /* TableCell */,
+				98C75FDE1DB77A170061DED6 /* Tool */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		98C75FD91DB77A170061DED6 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				98C75FDA1DB77A170061DED6 /* NavigationManager.h */,
+				98C75FDB1DB77A170061DED6 /* NavigationManager.m */,
+				98C7600F1DB7C0B10061DED6 /* ThemeManeger.h */,
+				98C760101DB7C0B10061DED6 /* ThemeManeger.m */,
+			);
+			path = Manage;
+			sourceTree = "<group>";
+		};
+		98C75FDC1DB77A170061DED6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				98C75FE41DB77BB00061DED6 /* AppConstants.h */,
+				98C75FE51DB77BB00061DED6 /* AppConstants.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		98C75FDD1DB77A170061DED6 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		98C75FDE1DB77A170061DED6 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				98C75FDF1DB77A170061DED6 /* DataSaveTool.h */,
+				98C75FE01DB77A170061DED6 /* DataSaveTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		98C75FE31DB77A1E0061DED6 /* SDk */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDk;
+			sourceTree = "<group>";
+		};
+		98C760051DB7BFA60061DED6 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				98C760061DB7C0180061DED6 /* ThemeImageView.h */,
+				98C760071DB7C0180061DED6 /* ThemeImageView.m */,
+				98C760091DB7C0320061DED6 /* ThemeLable.h */,
+				98C7600A1DB7C0320061DED6 /* ThemeLable.m */,
+				98C7600C1DB7C0760061DED6 /* ThemeButton.h */,
+				98C7600D1DB7C0760061DED6 /* ThemeButton.m */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		98C760121DB7D03D0061DED6 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Image;
+			path = SDk/Image;
+			sourceTree = "<group>";
+		};
+		D365521377D7A105252EECE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				623AE4C252233D4CD424C1CC /* Pods-GabriellaXia.debug.xcconfig */,
+				487BD6827DD89F3EE97DA90A /* Pods-GabriellaXia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7CA245161DBB2981A3FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CFDB452BE2B6D377238ADB9 /* libPods-GabriellaXia.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +392,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98C75F951DB5F0E50061DED6 /* Build configuration list for PBXNativeTarget "GabriellaXia" */;
 			buildPhases = (
+				8EF268F8D40E7E97A03F1165 /* [CP] Check Pods Manifest.lock */,
 				98C75F641DB5F0E50061DED6 /* Sources */,
 				98C75F651DB5F0E50061DED6 /* Frameworks */,
 				98C75F661DB5F0E50061DED6 /* Resources */,
+				6610C7CCA5076EC53EE556CE /* [CP] Embed Pods Frameworks */,
+				A4674E7E2AD92EB28C324276 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,10 +455,12 @@
 				TargetAttributes = {
 					98C75F671DB5F0E50061DED6 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = R5MB99AR64;
 						ProvisioningStyle = Automatic;
 					};
 					98C75F801DB5F0E50061DED6 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = R5MB99AR64;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 98C75F671DB5F0E50061DED6;
 					};
@@ -246,9 +496,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98C75FD41DB77A070061DED6 /* BaseViewController.xib in Resources */,
+				98C760041DB7B9E10061DED6 /* RegisterViewController.xib in Resources */,
+				98C75FF01DB7B7BB0061DED6 /* MoreViewController.xib in Resources */,
 				98C75F7B1DB5F0E50061DED6 /* LaunchScreen.storyboard in Resources */,
 				98C75F781DB5F0E50061DED6 /* Assets.xcassets in Resources */,
-				98C75F761DB5F0E50061DED6 /* Main.storyboard in Resources */,
+				98C75FD61DB77A070061DED6 /* HomeViewController.xib in Resources */,
+				98C75FEB1DB7B7A10061DED6 /* DiscoverViewController.xib in Resources */,
+				98C75FFA1DB7B7E40061DED6 /* MessageViewController.xib in Resources */,
+				98C75FF51DB7B7CF0061DED6 /* MeViewController.xib in Resources */,
+				98C75FFF1DB7B9CB0061DED6 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,14 +525,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6610C7CCA5076EC53EE556CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GabriellaXia/Pods-GabriellaXia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EF268F8D40E7E97A03F1165 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4674E7E2AD92EB28C324276 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GabriellaXia/Pods-GabriellaXia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		98C75F641DB5F0E50061DED6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98C75F731DB5F0E50061DED6 /* ViewController.m in Sources */,
 				98C75F701DB5F0E50061DED6 /* AppDelegate.m in Sources */,
+				98C75FEA1DB7B7A10061DED6 /* DiscoverViewController.m in Sources */,
+				98C75FFE1DB7B9CB0061DED6 /* LoginViewController.m in Sources */,
+				98C75FE11DB77A170061DED6 /* NavigationManager.m in Sources */,
+				98C75FD71DB77A070061DED6 /* MainTabBarController.m in Sources */,
+				98C75FD31DB77A070061DED6 /* BaseViewController.m in Sources */,
 				98C75F6D1DB5F0E50061DED6 /* main.m in Sources */,
+				98C75FF91DB7B7E40061DED6 /* MessageViewController.m in Sources */,
+				98C75FD51DB77A070061DED6 /* HomeViewController.m in Sources */,
+				98C75FE21DB77A170061DED6 /* DataSaveTool.m in Sources */,
+				98C7600B1DB7C0320061DED6 /* ThemeLable.m in Sources */,
+				98C75FE61DB77BB00061DED6 /* AppConstants.m in Sources */,
+				98C760031DB7B9E10061DED6 /* RegisterViewController.m in Sources */,
+				98C7600E1DB7C0760061DED6 /* ThemeButton.m in Sources */,
+				98C760081DB7C0180061DED6 /* ThemeImageView.m in Sources */,
+				98C760111DB7C0B10061DED6 /* ThemeManeger.m in Sources */,
+				98C75FF41DB7B7CF0061DED6 /* MeViewController.m in Sources */,
+				98C75FEF1DB7B7BB0061DED6 /* MoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,14 +631,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		98C75F741DB5F0E50061DED6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				98C75F751DB5F0E50061DED6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		98C75F791DB5F0E50061DED6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -422,8 +734,12 @@
 		};
 		98C75F961DB5F0E50061DED6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 623AE4C252233D4CD424C1CC /* Pods-GabriellaXia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R5MB99AR64;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GabriellaXia/Conment.pch";
 				INFOPLIST_FILE = GabriellaXia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xm.GabriellaXia;
@@ -433,8 +749,12 @@
 		};
 		98C75F971DB5F0E50061DED6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487BD6827DD89F3EE97DA90A /* Pods-GabriellaXia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R5MB99AR64;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GabriellaXia/Conment.pch";
 				INFOPLIST_FILE = GabriellaXia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xm.GabriellaXia;
@@ -446,6 +766,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R5MB99AR64;
 				INFOPLIST_FILE = GabriellaXiaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xm.GabriellaXiaTests;
@@ -458,6 +779,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R5MB99AR64;
 				INFOPLIST_FILE = GabriellaXiaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xm.GabriellaXiaTests;
@@ -507,6 +829,7 @@
 				98C75F971DB5F0E50061DED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98C75F981DB5F0E50061DED6 /* Build configuration list for PBXNativeTarget "GabriellaXiaTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +838,7 @@
 				98C75F9A1DB5F0E50061DED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98C75F9B1DB5F0E50061DED6 /* Build configuration list for PBXNativeTarget "GabriellaXiaUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +847,7 @@
 				98C75F9D1DB5F0E50061DED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

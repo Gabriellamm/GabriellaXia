@@ -1,0 +1,8 @@
+target 'GabriellaXia' do
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'MBProgressHUD'
+pod 'ViewDeck'
+pod 'MJRefresh'
+pod 'SVProgressHUD'
+end
