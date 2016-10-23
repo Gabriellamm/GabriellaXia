@@ -12,6 +12,11 @@
 		98AD050F1DBAF97D00653428 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD050E1DBAF97D00653428 /* LocalizationManager.m */; };
 		98AD05121DBBC31000653428 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98AD05141DBBC31000653428 /* InfoPlist.strings */; };
 		98AD051B1DBCDF8300653428 /* UIView+Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD051A1DBCDF8300653428 /* UIView+Response.m */; };
+		98AD05201DBD132500653428 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD051E1DBD132500653428 /* LeftViewController.m */; };
+		98AD05211DBD132500653428 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98AD051F1DBD132500653428 /* LeftViewController.xib */; };
+		98AD05251DBD133600653428 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD05231DBD133600653428 /* RightViewController.m */; };
+		98AD05261DBD133600653428 /* RightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98AD05241DBD133600653428 /* RightViewController.xib */; };
+		98AD052C1DBD154300653428 /* BaseViewController+MMDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD052B1DBD154300653428 /* BaseViewController+MMDrawerViewController.m */; };
 		98C75F6D1DB5F0E50061DED6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F6C1DB5F0E50061DED6 /* main.m */; };
 		98C75F701DB5F0E50061DED6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F6F1DB5F0E50061DED6 /* AppDelegate.m */; };
 		98C75F7B1DB5F0E50061DED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C75F791DB5F0E50061DED6 /* LaunchScreen.storyboard */; };
@@ -78,6 +83,14 @@
 		98AD05181DBBC3B200653428 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		98AD05191DBCDF8300653428 /* UIView+Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Response.h"; sourceTree = "<group>"; };
 		98AD051A1DBCDF8300653428 /* UIView+Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Response.m"; sourceTree = "<group>"; };
+		98AD051D1DBD132500653428 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		98AD051E1DBD132500653428 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		98AD051F1DBD132500653428 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		98AD05221DBD133600653428 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		98AD05231DBD133600653428 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		98AD05241DBD133600653428 /* RightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightViewController.xib; sourceTree = "<group>"; };
+		98AD052A1DBD154300653428 /* BaseViewController+MMDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseViewController+MMDrawerViewController.h"; sourceTree = "<group>"; };
+		98AD052B1DBD154300653428 /* BaseViewController+MMDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseViewController+MMDrawerViewController.m"; sourceTree = "<group>"; };
 		98C75F681DB5F0E50061DED6 /* GabriellaXia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GabriellaXia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C75F6C1DB5F0E50061DED6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98C75F6E1DB5F0E50061DED6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -160,6 +173,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98AD051C1DBD121A00653428 /* MMDrawerLeftAndRight */ = {
+			isa = PBXGroup;
+			children = (
+				98AD051D1DBD132500653428 /* LeftViewController.h */,
+				98AD051E1DBD132500653428 /* LeftViewController.m */,
+				98AD051F1DBD132500653428 /* LeftViewController.xib */,
+				98AD05221DBD133600653428 /* RightViewController.h */,
+				98AD05231DBD133600653428 /* RightViewController.m */,
+				98AD05241DBD133600653428 /* RightViewController.xib */,
+				98AD052A1DBD154300653428 /* BaseViewController+MMDrawerViewController.h */,
+				98AD052B1DBD154300653428 /* BaseViewController+MMDrawerViewController.m */,
+			);
+			path = MMDrawerLeftAndRight;
+			sourceTree = "<group>";
+		};
 		98C75F5F1DB5F0E40061DED6 = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +277,7 @@
 				98C75FC61DB77A070061DED6 /* BaseViewController.h */,
 				98C75FC71DB77A070061DED6 /* BaseViewController.m */,
 				98C75FC81DB77A070061DED6 /* BaseViewController.xib */,
+				98AD051C1DBD121A00653428 /* MMDrawerLeftAndRight */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -521,12 +550,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				980A7AF91DB9A68A00316915 /* Skins in Resources */,
+				98AD05261DBD133600653428 /* RightViewController.xib in Resources */,
 				98AD05091DBAF5DD00653428 /* Localizable.strings in Resources */,
 				98C75FD41DB77A070061DED6 /* BaseViewController.xib in Resources */,
 				98AD05121DBBC31000653428 /* InfoPlist.strings in Resources */,
 				98C760041DB7B9E10061DED6 /* RegisterViewController.xib in Resources */,
 				98C75FF01DB7B7BB0061DED6 /* MoreViewController.xib in Resources */,
 				98C75F7B1DB5F0E50061DED6 /* LaunchScreen.storyboard in Resources */,
+				98AD05211DBD132500653428 /* LeftViewController.xib in Resources */,
 				98C75FD61DB77A070061DED6 /* HomeViewController.xib in Resources */,
 				98C75FEB1DB7B7A10061DED6 /* DiscoverViewController.xib in Resources */,
 				98C75FFA1DB7B7E40061DED6 /* MessageViewController.xib in Resources */,
@@ -619,9 +650,12 @@
 				98C75FE61DB77BB00061DED6 /* AppConstants.m in Sources */,
 				98AD050F1DBAF97D00653428 /* LocalizationManager.m in Sources */,
 				98C760031DB7B9E10061DED6 /* RegisterViewController.m in Sources */,
+				98AD05251DBD133600653428 /* RightViewController.m in Sources */,
 				98C7600E1DB7C0760061DED6 /* ThemeButton.m in Sources */,
 				98C760081DB7C0180061DED6 /* ThemeImageView.m in Sources */,
 				98C760111DB7C0B10061DED6 /* ThemeManeger.m in Sources */,
+				98AD052C1DBD154300653428 /* BaseViewController+MMDrawerViewController.m in Sources */,
+				98AD05201DBD132500653428 /* LeftViewController.m in Sources */,
 				98C75FF41DB7B7CF0061DED6 /* MeViewController.m in Sources */,
 				98C75FEF1DB7B7BB0061DED6 /* MoreViewController.m in Sources */,
 			);
