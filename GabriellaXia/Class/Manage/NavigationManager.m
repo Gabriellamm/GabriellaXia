@@ -35,10 +35,13 @@
             MainTabBarController *tabBarC=[[MainTabBarController alloc]init];
             tabBarC.delegate=self;
             navigationController = [[UINavigationController alloc]initWithRootViewController:tabBarC];
+            tabBarC.view.backgroundColor=[UIColor redColor];
             
         }else{
             LoginViewController *loginVC=[[LoginViewController alloc]init];
             navigationController =[[UINavigationController alloc]initWithRootViewController:loginVC];
+            
+            loginVC.view.backgroundColor=[UIColor blueColor];
         }
 
     }

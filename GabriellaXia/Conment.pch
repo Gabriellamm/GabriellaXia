@@ -9,16 +9,39 @@
 #ifndef Conment_pch
 #define Conment_pch
 
+// manager
+#import "NavigationManager.h"
+#import "ThemeManeger.h"
+#import "LocalizationManager.h"
+// data
 #import "DataSaveTool.h"
 #import "ConstantDefinition.h"
 #import "AppConstants.h"
+//tabBar item
 #import "HomeViewController.h"
 #import "MessageViewController.h"
 #import "MoreViewController.h"
 #import "DiscoverViewController.h"
 #import "MeViewController.h"
 #import "ThemeImageView.h"
+//theme
 #import "ThemeLable.h"
 #import "ThemeButton.h"
+#import "ThemeManeger.h"
 
+
+
+#define languageKey @"languageKey"
+#define language_chinese @"zh-Hans"
+
+
+// function
+#define COLOR(R,B,C) [UIColor colorWithRed:(R)/255.0f green:(B)/255.0f blue:(C)/255.0f alpha:1];
+#define COLOR_ALPHA(R,B,C,alpha) [UIColor colorWithRed:(R)/255.0f green:(B)/255.0f blue:(C)/255.0f alpha:alpha];
+
+//
+//#define setLanguage (language)   [[LocalizationManager shareManager] setIanguage:(language)];
+//#define getlanguage  [[LocalizationManager shareManager ] getLanguage];
+//#define  getLocalizedString (string)  [[LocalizationManager shareManager] localizedStringForKey:(string)];
+//#define getLocalizedStringAndLanguage (string,language)    [[LocalizationManager shareManager]localizedStringForKey:(string) withLanguage:(language)];
 #endif /* Conment_pch */

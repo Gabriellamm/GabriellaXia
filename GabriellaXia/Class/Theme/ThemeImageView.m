@@ -8,14 +8,42 @@
 
 #import "ThemeImageView.h"
 
+
 @implementation ThemeImageView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+-(void)dealloc{
+  [  [NSNotificationCenter defaultCenter]removeObserver:self name:ThemeNameChange object:nil ];
 
+}
+
+
+-(id)initWithFrame:(CGRect)frame{
+    self=[super initWithFrame:frame];
+    if (self) {
+        [  [NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadThemeManegerView) name:ThemeNameChange object:nil ];
+    }
+
+    return self;
+}
+
+-(void)awakeFromNib{
+    [super awakeFromNib ];
+        [  [NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadThemeManegerView) name:ThemeNameChange object:nil ];
+}
+
+-(void)setImageName:(NSString *)imageName{
+    if (_imageName!=imageName) {
+        _imageName=imageName;
+
+        [self loadThemeManegerView];
+    }
+}
+
+
+-(void)loadThemeManegerView{
+    ThemeManeger *themeM=[ThemeManeger shareInstance];
+    self.image=[themeM themeImage:_imageName];
+
+    
+}
 @end

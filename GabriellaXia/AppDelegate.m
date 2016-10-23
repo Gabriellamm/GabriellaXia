@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    setLanguage(getLocalizedLanguage);
+
+    self.window.rootViewController=[[NavigationManager shareManager] rootViewController ];
+
+    
+
+
 
 
     return YES;

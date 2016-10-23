@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ThemeLable : UILabel
 
+
+
+@interface ThemeLable : UILabel
+{
+    NSInteger _systemFont;
+}
+
+@property (nonatomic,copy)NSString *colorName;
+@property (nonatomic,assign)NSInteger labelFont; // 系统默认为0  这里设置 0=17 1=18
 @end

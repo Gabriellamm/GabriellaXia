@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980A7AF91DB9A68A00316915 /* Skins in Resources */ = {isa = PBXBuildFile; fileRef = 980A7AF81DB9A68A00316915 /* Skins */; };
+		98AD05091DBAF5DD00653428 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98AD050B1DBAF5DD00653428 /* Localizable.strings */; };
+		98AD050F1DBAF97D00653428 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD050E1DBAF97D00653428 /* LocalizationManager.m */; };
+		98AD05121DBBC31000653428 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98AD05141DBBC31000653428 /* InfoPlist.strings */; };
 		98C75F6D1DB5F0E50061DED6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F6C1DB5F0E50061DED6 /* main.m */; };
 		98C75F701DB5F0E50061DED6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F6F1DB5F0E50061DED6 /* AppDelegate.m */; };
-		98C75F781DB5F0E50061DED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C75F771DB5F0E50061DED6 /* Assets.xcassets */; };
 		98C75F7B1DB5F0E50061DED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C75F791DB5F0E50061DED6 /* LaunchScreen.storyboard */; };
 		98C75F861DB5F0E50061DED6 /* GabriellaXiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F851DB5F0E50061DED6 /* GabriellaXiaTests.m */; };
 		98C75F911DB5F0E50061DED6 /* GabriellaXiaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F901DB5F0E50061DED6 /* GabriellaXiaUITests.m */; };
@@ -61,11 +64,21 @@
 		487BD6827DD89F3EE97DA90A /* Pods-GabriellaXia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GabriellaXia.release.xcconfig"; path = "Pods/Target Support Files/Pods-GabriellaXia/Pods-GabriellaXia.release.xcconfig"; sourceTree = "<group>"; };
 		623AE4C252233D4CD424C1CC /* Pods-GabriellaXia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GabriellaXia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GabriellaXia/Pods-GabriellaXia.debug.xcconfig"; sourceTree = "<group>"; };
 		7CFDB452BE2B6D377238ADB9 /* libPods-GabriellaXia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GabriellaXia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		980A7AF81DB9A68A00316915 /* Skins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Skins; sourceTree = "<group>"; };
+		98AD05031DBAEFD400653428 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		98AD050A1DBAF5DD00653428 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98AD050C1DBAF5E800653428 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		98AD050D1DBAF97D00653428 /* LocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationManager.h; sourceTree = "<group>"; };
+		98AD050E1DBAF97D00653428 /* LocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationManager.m; sourceTree = "<group>"; };
+		98AD05131DBBC31000653428 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		98AD05151DBBC31C00653428 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		98AD05161DBBC3B100653428 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		98AD05171DBBC3B200653428 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98AD05181DBBC3B200653428 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		98C75F681DB5F0E50061DED6 /* GabriellaXia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GabriellaXia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C75F6C1DB5F0E50061DED6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98C75F6E1DB5F0E50061DED6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		98C75F6F1DB5F0E50061DED6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		98C75F771DB5F0E50061DED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98C75F7A1DB5F0E50061DED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98C75F7C1DB5F0E50061DED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98C75F811DB5F0E50061DED6 /* GabriellaXiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GabriellaXiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,9 +189,10 @@
 				98C75F6F1DB5F0E50061DED6 /* AppDelegate.m */,
 				98C75FB01DB73E9D0061DED6 /* ConstantDefinition.h */,
 				98C75FB11DB73EF30061DED6 /* Conment.pch */,
-				98C75F771DB5F0E50061DED6 /* Assets.xcassets */,
 				98C75F791DB5F0E50061DED6 /* LaunchScreen.storyboard */,
 				98C75F7C1DB5F0E50061DED6 /* Info.plist */,
+				98AD050B1DBAF5DD00653428 /* Localizable.strings */,
+				98AD05141DBBC31000653428 /* InfoPlist.strings */,
 				98C760121DB7D03D0061DED6 /* Image */,
 				98C75F6B1DB5F0E50061DED6 /* Supporting Files */,
 			);
@@ -311,6 +325,8 @@
 				98C75FDB1DB77A170061DED6 /* NavigationManager.m */,
 				98C7600F1DB7C0B10061DED6 /* ThemeManeger.h */,
 				98C760101DB7C0B10061DED6 /* ThemeManeger.m */,
+				98AD050D1DBAF97D00653428 /* LocalizationManager.h */,
+				98AD050E1DBAF97D00653428 /* LocalizationManager.m */,
 			);
 			path = Manage;
 			sourceTree = "<group>";
@@ -363,6 +379,7 @@
 		98C760121DB7D03D0061DED6 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				980A7AF81DB9A68A00316915 /* Skins */,
 			);
 			name = Image;
 			path = SDk/Image;
@@ -478,6 +495,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ja,
 			);
 			mainGroup = 98C75F5F1DB5F0E40061DED6;
 			productRefGroup = 98C75F691DB5F0E50061DED6 /* Products */;
@@ -496,11 +515,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980A7AF91DB9A68A00316915 /* Skins in Resources */,
+				98AD05091DBAF5DD00653428 /* Localizable.strings in Resources */,
 				98C75FD41DB77A070061DED6 /* BaseViewController.xib in Resources */,
+				98AD05121DBBC31000653428 /* InfoPlist.strings in Resources */,
 				98C760041DB7B9E10061DED6 /* RegisterViewController.xib in Resources */,
 				98C75FF01DB7B7BB0061DED6 /* MoreViewController.xib in Resources */,
 				98C75F7B1DB5F0E50061DED6 /* LaunchScreen.storyboard in Resources */,
-				98C75F781DB5F0E50061DED6 /* Assets.xcassets in Resources */,
 				98C75FD61DB77A070061DED6 /* HomeViewController.xib in Resources */,
 				98C75FEB1DB7B7A10061DED6 /* DiscoverViewController.xib in Resources */,
 				98C75FFA1DB7B7E40061DED6 /* MessageViewController.xib in Resources */,
@@ -590,6 +611,7 @@
 				98C75FE21DB77A170061DED6 /* DataSaveTool.m in Sources */,
 				98C7600B1DB7C0320061DED6 /* ThemeLable.m in Sources */,
 				98C75FE61DB77BB00061DED6 /* AppConstants.m in Sources */,
+				98AD050F1DBAF97D00653428 /* LocalizationManager.m in Sources */,
 				98C760031DB7B9E10061DED6 /* RegisterViewController.m in Sources */,
 				98C7600E1DB7C0760061DED6 /* ThemeButton.m in Sources */,
 				98C760081DB7C0180061DED6 /* ThemeImageView.m in Sources */,
@@ -631,10 +653,32 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		98AD050B1DBAF5DD00653428 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98AD050A1DBAF5DD00653428 /* en */,
+				98AD050C1DBAF5E800653428 /* zh-Hans */,
+				98AD05171DBBC3B200653428 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		98AD05141DBBC31000653428 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98AD05131DBBC31000653428 /* en */,
+				98AD05151DBBC31C00653428 /* zh-Hans */,
+				98AD05181DBBC3B200653428 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		98C75F791DB5F0E50061DED6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				98C75F7A1DB5F0E50061DED6 /* Base */,
+				98AD05031DBAEFD400653428 /* zh-Hans */,
+				98AD05161DBBC3B100653428 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -646,6 +690,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -694,6 +739,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

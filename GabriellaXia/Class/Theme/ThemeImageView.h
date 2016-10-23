@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ThemeImageView : UIImageView
-
+@property (nonatomic,copy)NSString *imageName;
 @end
