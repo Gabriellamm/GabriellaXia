@@ -41,7 +41,11 @@
 
 // theme 的路径
 -(void)themePath{
-    NSString *themeCofigPath=[[NSBundle mainBundle]pathForResource:@"theme.plist" ofType:nil ];
+
+    NSString *themeCofigPath=[[NSBundle mainBundle] resourcePath];
+//    themeCofigPath=[themeCofigPath stringByAppendingPathComponent:@"Skins/theme.plist"];
+    themeCofigPath=[themeCofigPath stringByAppendingPathComponent:themeImageFile];
+    themeCofigPath=[themeCofigPath stringByAppendingPathComponent:@"theme.plist"];
     _themeConfig=[[NSDictionary alloc]initWithContentsOfFile:themeCofigPath];
 
     //skin/主题／colorCof

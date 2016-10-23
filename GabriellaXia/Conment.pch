@@ -12,7 +12,10 @@
 // manager
 #import "NavigationManager.h"
 #import "ThemeManeger.h"
+
 #import "LocalizationManager.h"
+#define languageKey @"languageKey"
+#define language_chinese @"zh-Hans"
 // data
 #import "DataSaveTool.h"
 #import "ConstantDefinition.h"
@@ -28,11 +31,11 @@
 #import "ThemeLable.h"
 #import "ThemeButton.h"
 #import "ThemeManeger.h"
+#define themeImageFile @"Skins"
 
 
 
-#define languageKey @"languageKey"
-#define language_chinese @"zh-Hans"
+
 
 
 // function

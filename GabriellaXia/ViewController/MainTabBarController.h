@@ -13,7 +13,7 @@ typedef NS_ENUM  (NSInteger,MainTabBarControllerEvent){
     MainTabBarMessage,
     MainTabBarMore,
     MainTabBarDiscover,
-    MainTabarMe,
+    MainTabBarMe,
 
 };
 
@@ -24,5 +24,6 @@ typedef NS_ENUM  (NSInteger,MainTabBarControllerEvent){
 @end
 
 @interface MainTabBarController : UITabBarController
-@property(nonatomic,weak) id<MainTabBarControllerDelegate> delegate;
+@property(weak,nonatomic) id<MainTabBarControllerDelegate> clickItemDelegate;
+
 @end

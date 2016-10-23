@@ -11,6 +11,7 @@
 		98AD05091DBAF5DD00653428 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98AD050B1DBAF5DD00653428 /* Localizable.strings */; };
 		98AD050F1DBAF97D00653428 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD050E1DBAF97D00653428 /* LocalizationManager.m */; };
 		98AD05121DBBC31000653428 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98AD05141DBBC31000653428 /* InfoPlist.strings */; };
+		98AD051B1DBCDF8300653428 /* UIView+Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD051A1DBCDF8300653428 /* UIView+Response.m */; };
 		98C75F6D1DB5F0E50061DED6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F6C1DB5F0E50061DED6 /* main.m */; };
 		98C75F701DB5F0E50061DED6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F6F1DB5F0E50061DED6 /* AppDelegate.m */; };
 		98C75F7B1DB5F0E50061DED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C75F791DB5F0E50061DED6 /* LaunchScreen.storyboard */; };
@@ -75,6 +76,8 @@
 		98AD05161DBBC3B100653428 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		98AD05171DBBC3B200653428 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		98AD05181DBBC3B200653428 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		98AD05191DBCDF8300653428 /* UIView+Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Response.h"; sourceTree = "<group>"; };
+		98AD051A1DBCDF8300653428 /* UIView+Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Response.m"; sourceTree = "<group>"; };
 		98C75F681DB5F0E50061DED6 /* GabriellaXia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GabriellaXia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C75F6C1DB5F0E50061DED6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98C75F6E1DB5F0E50061DED6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -352,6 +355,8 @@
 			children = (
 				98C75FDF1DB77A170061DED6 /* DataSaveTool.h */,
 				98C75FE01DB77A170061DED6 /* DataSaveTool.m */,
+				98AD05191DBCDF8300653428 /* UIView+Response.h */,
+				98AD051A1DBCDF8300653428 /* UIView+Response.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -602,6 +607,7 @@
 				98C75F701DB5F0E50061DED6 /* AppDelegate.m in Sources */,
 				98C75FEA1DB7B7A10061DED6 /* DiscoverViewController.m in Sources */,
 				98C75FFE1DB7B9CB0061DED6 /* LoginViewController.m in Sources */,
+				98AD051B1DBCDF8300653428 /* UIView+Response.m in Sources */,
 				98C75FE11DB77A170061DED6 /* NavigationManager.m in Sources */,
 				98C75FD71DB77A070061DED6 /* MainTabBarController.m in Sources */,
 				98C75FD31DB77A070061DED6 /* BaseViewController.m in Sources */,

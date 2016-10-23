@@ -43,6 +43,7 @@
 -(void)loadThemeManegerView{
     ThemeManeger *themeM=[ThemeManeger shareInstance];
     self.image=[themeM themeImage:_imageName];
+    self.image=[self.image stretchableImageWithLeftCapWidth:25 topCapHeight:25];
 
     
 }
