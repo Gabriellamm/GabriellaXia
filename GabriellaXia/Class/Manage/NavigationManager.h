@@ -12,7 +12,7 @@
 #import "LoginViewController.h"
 #include "RegisterViewController.h"
 
-@interface NavigationManager : NSObject<MainTabBarControllerDelegate>
+@interface NavigationManager : NSObject
 
 +(NavigationManager *)shareManager;
 -(UIViewController *)rootViewController;

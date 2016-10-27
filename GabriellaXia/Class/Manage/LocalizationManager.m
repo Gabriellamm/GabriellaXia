@@ -30,14 +30,22 @@
 
     }else{
 // 默认的语言
-        path=[[NSBundle mainBundle]pathForResource:language_chinese ofType:@"lproj"];
-        [DataSaveTool saveObject:language_chinese forKey:languageKey];
+        NSString *currentLanguage=[self getSystemLanguage];
+        path=[[NSBundle mainBundle]pathForResource:currentLanguage ofType:@"lproj"];
+        [DataSaveTool saveObject:currentLanguage forKey:languageKey];
 
     }
     bundle =[NSBundle bundleWithPath:path];
 
 }
 
+
+// 当前系统语言
+-(NSString *)getSystemLanguage{
+    NSArray *languageArr=[NSLocale preferredLanguages];
+    NSString *currreLanguage=[languageArr objectAtIndex:0];
+    return currreLanguage;
+}
 -(NSString *)localizedStringForKey:(NSString *)string{
     NSString *changedLanguage=[bundle localizedStringForKey:string value:nil table:nil];
     return changedLanguage;

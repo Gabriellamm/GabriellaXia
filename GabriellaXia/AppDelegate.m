@@ -21,11 +21,13 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
+    
+
+
     setLanguage(getLocalizedLanguage);
 
     self.window.rootViewController=[[NavigationManager shareManager] rootViewController ];
  
-    
 
 
 

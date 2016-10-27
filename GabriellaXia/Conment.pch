@@ -26,24 +26,39 @@
 #import "MoreViewController.h"
 #import "DiscoverViewController.h"
 #import "MeViewController.h"
-#import "ThemeImageView.h"
+
 //theme
+#import "ThemeImageView.h"
 #import "ThemeLable.h"
 #import "ThemeButton.h"
 #import "ThemeManeger.h"
+#import "BaseViewController.h"
+#import "BaseNavigationViewController.h"
+
 #define themeImageFile @"Skins"
+
 //MMDrawerController
 #import "MMDrawerController.h"
+#import "BaseViewController+MMDrawerViewController.h"
 
-
-
-
+//netword
+#import "AFNetworking.h"
 
 
 
 // function
 #define COLOR(R,B,C) [UIColor colorWithRed:(R)/255.0f green:(B)/255.0f blue:(C)/255.0f alpha:1];
 #define COLOR_ALPHA(R,B,C,alpha) [UIColor colorWithRed:(R)/255.0f green:(B)/255.0f blue:(C)/255.0f alpha:alpha];
+
+
+//适配
+#define  iOS8   [[[UIDevice currentDevice]systemVersion] floatValue]>=8
+
+#define iOS9  [[[UIDevice currentDevice]systemVersion]floatValue]>=9
+#define iOS10 [[[UIDevice currentDevice]systemVersion]floatValue]>=10
+
+#define iPone  [UIDevice currentDevice].userInterfaceIdiom==UIUserInterfaceIdiomPhone;
+#define iPad  [UIDevice currentDevice].userInterfaceIdiom==UIUserInterfaceIdiomPad;
 
 //
 //#define setLanguage (language)   [[LocalizationManager shareManager] setIanguage:(language)];

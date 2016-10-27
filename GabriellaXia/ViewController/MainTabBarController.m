@@ -24,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setNeedsStatusBarAppearanceUpdate];
     [self initSubs];
     [self initTabBar];
 }
@@ -34,7 +35,6 @@
 
         HomeViewController *HomeVC=[[HomeViewController alloc]init];
 
-        HomeVC.view.backgroundColor=[UIColor blueColor];
         UINavigationController *homeNV=[[UINavigationController alloc]initWithRootViewController:HomeVC];
 
 
@@ -174,7 +174,9 @@
 
 }
 
-
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
 
 
 - (void)didReceiveMemoryWarning {

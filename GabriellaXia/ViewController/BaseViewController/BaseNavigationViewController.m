@@ -1,90 +1,81 @@
 //
-//  BaseViewController.m
+//  BaseNavigationViewController.m
 //  GabriellaXia
 //
-//  Created by Gabriella on 2016/10/19.
+//  Created by Gabriella on 2016/10/24.
 //  Copyright © 2016年 Gabriella. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseNavigationViewController.h"
 
-@interface BaseViewController ()
+@interface BaseNavigationViewController ()
 
+{
+
+    NSInteger _systemFontSize;
+}
 @end
 
-@implementation BaseViewController
+@implementation BaseNavigationViewController
 
 -(void)dealloc{
+
     [[NSNotificationCenter defaultCenter]removeObserver:self name:ThemeNameChange object:nil];
     [[NSNotificationCenter defaultCenter]removeObserver:self name:UIContentSizeCategoryDidChangeNotification object:nil];
 }
 
--(id)initWithCoder:(NSCoder *)aDecoder{
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeThemeAction) name:ThemeNameChange object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fontChange:) name:UIContentSizeCategoryDidChangeNotification object:nil];
-
-    }
-    return self;
-}
 
 
--(instancetype)init{
-    self=[super init];
-    if (self) {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeThemeAction) name:ThemeNameChange object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fontChange:) name:UIContentSizeCategoryDidChangeNotification object:nil];
-
-    }
-    return self;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     [self setNeedsStatusBarAppearanceUpdate];
-    _systemFontSize=   [self getSystemFont];
+
+
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeThemeAction) name:ThemeNameChange object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fontChange:) name:UIContentSizeCategoryDidChangeNotification object:nil];
+
     [self changeThemeAction];
+    [self fontChange:nil];
     // Do any additional setup after loading the view from its nib.
 }
 
 
-
-
 #pragma mark *************function
--(void)changeThemeAction {
+-(void)changeThemeAction{
 
-    ThemeManeger *manager=[ThemeManeger shareInstance];
-    UIImage *image=[manager themeImage:@"bg_home.jpg"];
-    self.view.backgroundColor=[UIColor colorWithPatternImage:image];
+
+    ThemeManeger *themeM=[ThemeManeger shareInstance];
+    UIImage *backgroundImage=[themeM  themeImage:@"mask_titlebar64@2x.png"];
+    [self.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+
+    UIColor *titleColor=[themeM themeColor:@"Mask_Title_color"];
+    self.navigationBar.tintColor=titleColor;
 
 }
 
 -(void)fontChange:(NSNotification *)not{
 
 
-    _systemFontSize=   [self getSystemFont];
-
-
-
+    _systemFontSize=   [self changeSystemFont];
+    
+    
+    
 }
+-(NSInteger)changeSystemFont{
 
-
-//get system font 默认为 17
--(NSInteger)getSystemFont{
     UIFont *systemfont=[UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     UIFontDescriptor *fontDes=systemfont.fontDescriptor;
     NSNumber *fontNum=[fontDes objectForKey:@"NSFontSizeAttribute"];
     NSInteger  currFontBody=[fontNum integerValue];
     return currFontBody;
-    
 }
 
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

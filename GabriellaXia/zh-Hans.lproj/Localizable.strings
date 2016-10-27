@@ -7,8 +7,8 @@
 */
 
 // tabBar
-"TabBarHome" = "Home";
-"TabBarMassage" = "Massage";
-"TabBarMore" = "More";
-"TabBarDiscorve" = "Discove";
-"TabBarMe" = "Me";
+"TabBarHome" = "主页";
+"TabBarMassage" = "信息";
+"TabBarMore" = "更多";
+"TabBarDiscorve" = "发现";
+"TabBarMe" = "我";

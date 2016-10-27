@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define ThemeNameDefualt @"猫爷"
+#define ThemeNameDefualt @"Blue Moon"
 #define ThemeNameChange @"ThemeNameChange"
 @interface ThemeManeger : NSObject
 {

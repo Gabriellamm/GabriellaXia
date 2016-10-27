@@ -19,7 +19,7 @@
  ThemeButton *themButton =   [super buttonWithType:buttonType];
     if (themButton) {
 
-        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(chageButton) name:ThemeNameChange object:nil ];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(chageButton) name:ThemeNameChange object:nil ];
     }
 
     return themButton;
@@ -29,7 +29,7 @@
 
 -(void)awakeFromNib{
     [super awakeFromNib];
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(chageButton) name:ThemeNameChange object:nil ];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(chageButton) name:ThemeNameChange object:nil ];
 
 
 }

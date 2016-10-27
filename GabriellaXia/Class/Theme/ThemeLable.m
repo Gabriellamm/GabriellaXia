@@ -18,8 +18,8 @@
 -(id)initWithFrame:(CGRect)frame{
     self=[super initWithFrame:frame];
     if (self) {
-        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeColor) name:ThemeNameChange object:nil];
-        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(fontChange:) name:UIContentSizeCategoryDidChangeNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeColor) name:ThemeNameChange object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fontChange:) name:UIContentSizeCategoryDidChangeNotification object:nil];
 //        _systemFont=[self getSystemFont];
 
     }
@@ -28,8 +28,8 @@
 
 -(void)awakeFromNib{
   [  super awakeFromNib ];
-            [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeColor) name:ThemeNameChange object:nil];
-            [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(fontChange:) name:UIContentSizeCategoryDidChangeNotification object:nil];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeColor) name:ThemeNameChange object:nil];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fontChange:) name:UIContentSizeCategoryDidChangeNotification object:nil];
 //            _systemFont=[self getSystemFont];
 
 }

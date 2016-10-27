@@ -17,6 +17,11 @@
 		98AD05251DBD133600653428 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD05231DBD133600653428 /* RightViewController.m */; };
 		98AD05261DBD133600653428 /* RightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98AD05241DBD133600653428 /* RightViewController.xib */; };
 		98AD052C1DBD154300653428 /* BaseViewController+MMDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD052B1DBD154300653428 /* BaseViewController+MMDrawerViewController.m */; };
+		98AD05301DBD251100653428 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD052E1DBD251100653428 /* BaseNavigationViewController.m */; };
+		98AD05311DBD251100653428 /* BaseNavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98AD052F1DBD251100653428 /* BaseNavigationViewController.xib */; };
+		98AD05351DBF9E7300653428 /* meHeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD05331DBF9E7300653428 /* meHeadTableViewCell.m */; };
+		98AD05361DBF9E7300653428 /* meHeadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98AD05341DBF9E7300653428 /* meHeadTableViewCell.xib */; };
+		98AD05391DBFC17800653428 /* ApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD05381DBFC17800653428 /* ApiManager.m */; };
 		98C75F6D1DB5F0E50061DED6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F6C1DB5F0E50061DED6 /* main.m */; };
 		98C75F701DB5F0E50061DED6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C75F6F1DB5F0E50061DED6 /* AppDelegate.m */; };
 		98C75F7B1DB5F0E50061DED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C75F791DB5F0E50061DED6 /* LaunchScreen.storyboard */; };
@@ -91,6 +96,14 @@
 		98AD05241DBD133600653428 /* RightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightViewController.xib; sourceTree = "<group>"; };
 		98AD052A1DBD154300653428 /* BaseViewController+MMDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseViewController+MMDrawerViewController.h"; sourceTree = "<group>"; };
 		98AD052B1DBD154300653428 /* BaseViewController+MMDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseViewController+MMDrawerViewController.m"; sourceTree = "<group>"; };
+		98AD052D1DBD251100653428 /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		98AD052E1DBD251100653428 /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		98AD052F1DBD251100653428 /* BaseNavigationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseNavigationViewController.xib; sourceTree = "<group>"; };
+		98AD05321DBF9E7300653428 /* meHeadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meHeadTableViewCell.h; sourceTree = "<group>"; };
+		98AD05331DBF9E7300653428 /* meHeadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meHeadTableViewCell.m; sourceTree = "<group>"; };
+		98AD05341DBF9E7300653428 /* meHeadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = meHeadTableViewCell.xib; sourceTree = "<group>"; };
+		98AD05371DBFC17800653428 /* ApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiManager.h; sourceTree = "<group>"; };
+		98AD05381DBFC17800653428 /* ApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiManager.m; sourceTree = "<group>"; };
 		98C75F681DB5F0E50061DED6 /* GabriellaXia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GabriellaXia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C75F6C1DB5F0E50061DED6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98C75F6E1DB5F0E50061DED6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -277,6 +290,9 @@
 				98C75FC61DB77A070061DED6 /* BaseViewController.h */,
 				98C75FC71DB77A070061DED6 /* BaseViewController.m */,
 				98C75FC81DB77A070061DED6 /* BaseViewController.xib */,
+				98AD052D1DBD251100653428 /* BaseNavigationViewController.h */,
+				98AD052E1DBD251100653428 /* BaseNavigationViewController.m */,
+				98AD052F1DBD251100653428 /* BaseNavigationViewController.xib */,
 				98AD051C1DBD121A00653428 /* MMDrawerLeftAndRight */,
 			);
 			path = BaseViewController;
@@ -355,6 +371,8 @@
 			children = (
 				98C75FDA1DB77A170061DED6 /* NavigationManager.h */,
 				98C75FDB1DB77A170061DED6 /* NavigationManager.m */,
+				98AD05371DBFC17800653428 /* ApiManager.h */,
+				98AD05381DBFC17800653428 /* ApiManager.m */,
 				98C7600F1DB7C0B10061DED6 /* ThemeManeger.h */,
 				98C760101DB7C0B10061DED6 /* ThemeManeger.m */,
 				98AD050D1DBAF97D00653428 /* LocalizationManager.h */,
@@ -375,6 +393,9 @@
 		98C75FDD1DB77A170061DED6 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
+				98AD05321DBF9E7300653428 /* meHeadTableViewCell.h */,
+				98AD05331DBF9E7300653428 /* meHeadTableViewCell.m */,
+				98AD05341DBF9E7300653428 /* meHeadTableViewCell.xib */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
@@ -553,6 +574,7 @@
 				98AD05261DBD133600653428 /* RightViewController.xib in Resources */,
 				98AD05091DBAF5DD00653428 /* Localizable.strings in Resources */,
 				98C75FD41DB77A070061DED6 /* BaseViewController.xib in Resources */,
+				98AD05311DBD251100653428 /* BaseNavigationViewController.xib in Resources */,
 				98AD05121DBBC31000653428 /* InfoPlist.strings in Resources */,
 				98C760041DB7B9E10061DED6 /* RegisterViewController.xib in Resources */,
 				98C75FF01DB7B7BB0061DED6 /* MoreViewController.xib in Resources */,
@@ -563,6 +585,7 @@
 				98C75FFA1DB7B7E40061DED6 /* MessageViewController.xib in Resources */,
 				98C75FF51DB7B7CF0061DED6 /* MeViewController.xib in Resources */,
 				98C75FFF1DB7B9CB0061DED6 /* LoginViewController.xib in Resources */,
+				98AD05361DBF9E7300653428 /* meHeadTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +670,7 @@
 				98C75FD51DB77A070061DED6 /* HomeViewController.m in Sources */,
 				98C75FE21DB77A170061DED6 /* DataSaveTool.m in Sources */,
 				98C7600B1DB7C0320061DED6 /* ThemeLable.m in Sources */,
+				98AD05391DBFC17800653428 /* ApiManager.m in Sources */,
 				98C75FE61DB77BB00061DED6 /* AppConstants.m in Sources */,
 				98AD050F1DBAF97D00653428 /* LocalizationManager.m in Sources */,
 				98C760031DB7B9E10061DED6 /* RegisterViewController.m in Sources */,
@@ -654,7 +678,9 @@
 				98C7600E1DB7C0760061DED6 /* ThemeButton.m in Sources */,
 				98C760081DB7C0180061DED6 /* ThemeImageView.m in Sources */,
 				98C760111DB7C0B10061DED6 /* ThemeManeger.m in Sources */,
+				98AD05301DBD251100653428 /* BaseNavigationViewController.m in Sources */,
 				98AD052C1DBD154300653428 /* BaseViewController+MMDrawerViewController.m in Sources */,
+				98AD05351DBF9E7300653428 /* meHeadTableViewCell.m in Sources */,
 				98AD05201DBD132500653428 /* LeftViewController.m in Sources */,
 				98C75FF41DB7B7CF0061DED6 /* MeViewController.m in Sources */,
 				98C75FEF1DB7B7BB0061DED6 /* MoreViewController.m in Sources */,
@@ -830,6 +856,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xm.GabriellaXia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
@@ -845,6 +872,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xm.GabriellaXia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};

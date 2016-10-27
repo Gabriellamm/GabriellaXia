@@ -11,5 +11,6 @@
 
 @interface BaseViewController : UIViewController
 
+@property (nonatomic,assign,readonly)NSInteger systemFontSize;
 
 @end

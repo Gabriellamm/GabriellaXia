@@ -9,14 +9,20 @@
 #import "HomeViewController.h"
 
 @interface HomeViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *contentLable;
 @end
 
 @implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+     _titleLabel.adjustsFontForContentSizeCategory = YES;
+    _contentLable.adjustsFontSizeToFitWidth=YES;
+    _contentLable.adjustsFontForContentSizeCategory=YES;
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
