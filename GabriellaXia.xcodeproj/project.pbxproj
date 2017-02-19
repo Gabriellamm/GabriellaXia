@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9808DB781DD9A72B00B11EBD /* MeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9808DB761DD9A72B00B11EBD /* MeTableViewCell.m */; };
+		9808DB791DD9A72B00B11EBD /* MeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9808DB771DD9A72B00B11EBD /* MeTableViewCell.xib */; };
+		9808DB7C1DD9BB5100B11EBD /* PhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9808DB7B1DD9BB5100B11EBD /* PhotoModel.m */; };
 		980A7AF91DB9A68A00316915 /* Skins in Resources */ = {isa = PBXBuildFile; fileRef = 980A7AF81DB9A68A00316915 /* Skins */; };
+		98833A451DD6286600431DF7 /* MeProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98833A441DD6286600431DF7 /* MeProfileModel.m */; };
 		98AD05091DBAF5DD00653428 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98AD050B1DBAF5DD00653428 /* Localizable.strings */; };
 		98AD050F1DBAF97D00653428 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD050E1DBAF97D00653428 /* LocalizationManager.m */; };
 		98AD05121DBBC31000653428 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98AD05141DBBC31000653428 /* InfoPlist.strings */; };
@@ -75,7 +79,14 @@
 		487BD6827DD89F3EE97DA90A /* Pods-GabriellaXia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GabriellaXia.release.xcconfig"; path = "Pods/Target Support Files/Pods-GabriellaXia/Pods-GabriellaXia.release.xcconfig"; sourceTree = "<group>"; };
 		623AE4C252233D4CD424C1CC /* Pods-GabriellaXia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GabriellaXia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GabriellaXia/Pods-GabriellaXia.debug.xcconfig"; sourceTree = "<group>"; };
 		7CFDB452BE2B6D377238ADB9 /* libPods-GabriellaXia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GabriellaXia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9808DB751DD9A72B00B11EBD /* MeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
+		9808DB761DD9A72B00B11EBD /* MeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
+		9808DB771DD9A72B00B11EBD /* MeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeTableViewCell.xib; sourceTree = "<group>"; };
+		9808DB7A1DD9BB5100B11EBD /* PhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoModel.h; sourceTree = "<group>"; };
+		9808DB7B1DD9BB5100B11EBD /* PhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoModel.m; sourceTree = "<group>"; };
 		980A7AF81DB9A68A00316915 /* Skins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Skins; sourceTree = "<group>"; };
+		98833A431DD6286600431DF7 /* MeProfileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeProfileModel.h; sourceTree = "<group>"; };
+		98833A441DD6286600431DF7 /* MeProfileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeProfileModel.m; sourceTree = "<group>"; };
 		98AD05031DBAEFD400653428 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		98AD050A1DBAF5DD00653428 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		98AD050C1DBAF5E800653428 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -186,6 +197,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98833A3E1DD627CB00431DF7 /* DiscoverModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DiscoverModel;
+			sourceTree = "<group>";
+		};
+		98833A3F1DD627CB00431DF7 /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeModel;
+			sourceTree = "<group>";
+		};
+		98833A401DD627CB00431DF7 /* MeModel */ = {
+			isa = PBXGroup;
+			children = (
+				98833A431DD6286600431DF7 /* MeProfileModel.h */,
+				98833A441DD6286600431DF7 /* MeProfileModel.m */,
+				9808DB7A1DD9BB5100B11EBD /* PhotoModel.h */,
+				9808DB7B1DD9BB5100B11EBD /* PhotoModel.m */,
+			);
+			path = MeModel;
+			sourceTree = "<group>";
+		};
+		98833A411DD627CB00431DF7 /* MessageModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MessageModel;
+			sourceTree = "<group>";
+		};
+		98833A421DD627CB00431DF7 /* MoreModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MoreModel;
+			sourceTree = "<group>";
+		};
 		98AD051C1DBD121A00653428 /* MMDrawerLeftAndRight */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +434,11 @@
 		98C75FDC1DB77A170061DED6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				98833A3E1DD627CB00431DF7 /* DiscoverModel */,
+				98833A3F1DD627CB00431DF7 /* HomeModel */,
+				98833A401DD627CB00431DF7 /* MeModel */,
+				98833A411DD627CB00431DF7 /* MessageModel */,
+				98833A421DD627CB00431DF7 /* MoreModel */,
 				98C75FE41DB77BB00061DED6 /* AppConstants.h */,
 				98C75FE51DB77BB00061DED6 /* AppConstants.m */,
 			);
@@ -396,6 +451,9 @@
 				98AD05321DBF9E7300653428 /* meHeadTableViewCell.h */,
 				98AD05331DBF9E7300653428 /* meHeadTableViewCell.m */,
 				98AD05341DBF9E7300653428 /* meHeadTableViewCell.xib */,
+				9808DB751DD9A72B00B11EBD /* MeTableViewCell.h */,
+				9808DB761DD9A72B00B11EBD /* MeTableViewCell.m */,
+				9808DB771DD9A72B00B11EBD /* MeTableViewCell.xib */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
@@ -581,6 +639,7 @@
 				98C75F7B1DB5F0E50061DED6 /* LaunchScreen.storyboard in Resources */,
 				98AD05211DBD132500653428 /* LeftViewController.xib in Resources */,
 				98C75FD61DB77A070061DED6 /* HomeViewController.xib in Resources */,
+				9808DB791DD9A72B00B11EBD /* MeTableViewCell.xib in Resources */,
 				98C75FEB1DB7B7A10061DED6 /* DiscoverViewController.xib in Resources */,
 				98C75FFA1DB7B7E40061DED6 /* MessageViewController.xib in Resources */,
 				98C75FF51DB7B7CF0061DED6 /* MeViewController.xib in Resources */,
@@ -659,10 +718,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C75F701DB5F0E50061DED6 /* AppDelegate.m in Sources */,
+				9808DB7C1DD9BB5100B11EBD /* PhotoModel.m in Sources */,
 				98C75FEA1DB7B7A10061DED6 /* DiscoverViewController.m in Sources */,
 				98C75FFE1DB7B9CB0061DED6 /* LoginViewController.m in Sources */,
 				98AD051B1DBCDF8300653428 /* UIView+Response.m in Sources */,
 				98C75FE11DB77A170061DED6 /* NavigationManager.m in Sources */,
+				9808DB781DD9A72B00B11EBD /* MeTableViewCell.m in Sources */,
 				98C75FD71DB77A070061DED6 /* MainTabBarController.m in Sources */,
 				98C75FD31DB77A070061DED6 /* BaseViewController.m in Sources */,
 				98C75F6D1DB5F0E50061DED6 /* main.m in Sources */,
@@ -671,6 +732,7 @@
 				98C75FE21DB77A170061DED6 /* DataSaveTool.m in Sources */,
 				98C7600B1DB7C0320061DED6 /* ThemeLable.m in Sources */,
 				98AD05391DBFC17800653428 /* ApiManager.m in Sources */,
+				98833A451DD6286600431DF7 /* MeProfileModel.m in Sources */,
 				98C75FE61DB77BB00061DED6 /* AppConstants.m in Sources */,
 				98AD050F1DBAF97D00653428 /* LocalizationManager.m in Sources */,
 				98C760031DB7B9E10061DED6 /* RegisterViewController.m in Sources */,

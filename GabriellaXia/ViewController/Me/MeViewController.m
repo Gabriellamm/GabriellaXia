@@ -8,6 +8,9 @@
 
 #import "MeViewController.h"
 #import "meHeadTableViewCell.h"
+#import "MeProfileModel.h"
+#import "MeTableViewCell.h"
+
 
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -16,6 +19,9 @@
 @property (nonatomic,strong)UITableView *dubTableView;
 @property (nonatomic,strong)UITableView *mp3TableView;
 @property (nonatomic,strong)UITableView *wordTabelView;
+@property (nonatomic,strong)MeProfileModel *dobModel;
+@property (nonatomic,strong)meHeadTableViewCell *meHeadTab;
+
 
 @end
 
@@ -24,31 +30,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self loadData];
+    self.automaticallyAdjustsScrollViewInsets=YES;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 
-// dubbing  mp3  word
 
-    meHeadTableViewCell *meHeadTab=[meHeadTableViewCell shareInstance];
 
-    _dubTableView=[[UITableView alloc]initWithFrame:_meTableView.frame style:UITableViewStylePlain];
-    _dubTableView.tableHeaderView=meHeadTab;
-    _dubTableView.delegate=self;
-    _dubTableView.dataSource=self;
-    [self.view addSubview:_dubTableView];
 
-    _mp3TableView=[[UITableView alloc]initWithFrame:_meTableView.frame style:UITableViewStylePlain];
 
-    _meTableView.dataSource=self;
-    _meTableView.delegate=self;
-    [self.view addSubview:_meTableView];
+    _meHeadTab=[meHeadTableViewCell shareInstance];
+    _meHeadTab.frame=CGRectMake(0, 0, mainScreemWidth, 200);
 
-    _wordTabelView=[[UITableView alloc]initWithFrame:_meTableView.frame style:UITableViewStylePlain];
-    _wordTabelView.dataSource=self;
-    _wordTabelView.delegate=self;
-    [self.view addSubview:_wordTabelView];
+
+    [_meHeadTab.segmentedC setTitle:getLocalizedString(@"dobbing") forSegmentAtIndex:0];
+    [_meHeadTab.segmentedC setTitle:getLocalizedString(@"oudio") forSegmentAtIndex:1];
+    [_meHeadTab.segmentedC setTitle:getLocalizedString(@"word") forSegmentAtIndex:2];
+    _meHeadTab.segmentedC.selectedSegmentIndex=0; // 默认 0
+
+    [_meHeadTab.segmentedC addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventTouchUpInside];
+
+    [self.view addSubview:_meHeadTab];
+
+      [self loadData];
+
+    if ([self.meTableView respondsToSelector:@selector(setSeparatorInset:)]) {
+        [self.meTableView setSeparatorInset:UIEdgeInsetsZero];
+    }
 
 
 }
+
+
 
 
 
@@ -56,10 +67,17 @@
 
     if (tableView ==_dubTableView) {
         return 3;
+    }if (tableView==_mp3TableView) {
+        return 2;
+    } else {
+        return 1;
     }
+
 
     return 0;
 }
+
+
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
@@ -71,6 +89,12 @@
         }else{
             return 2;
         }
+    }if (tableView==_mp3TableView) {
+        return 3;
+
+    } else {
+
+        return 2;
     }
 
     return 0;
@@ -79,15 +103,90 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
+    UITableViewCell *cell;
 
-    return nil;
+
+    if (tableView==_dubTableView) {
+        static NSString *dobId=@"dobId";
+        MeTableViewCell *dobCell=[tableView dequeueReusableCellWithIdentifier:dobId];// tableview 中找到复用的cell
+        if (dobCell==nil) {
+            dobCell=[MeTableViewCell shareInstance];
+            cell=dobCell;
+            dobCell.backgroundColor=[UIColor redColor];
+
+            
+        }
+
+
+    }else if (tableView==_mp3TableView){
+
+        static NSString *mp3Id=@"mp3Id";
+        MeTableViewCell *mp3Cell=[tableView dequeueReusableCellWithIdentifier:mp3Id];// tableview 中找到复用的cell
+        if (mp3Cell==nil) {
+            mp3Cell=[MeTableViewCell shareInstance];
+            cell=mp3Cell;
+            mp3Cell.backgroundColor=[UIColor yellowColor];
+
+
+        }
+    }else{
+        static  NSString *wordID=@"wordId";
+        MeTableViewCell *wordCell=[tableView dequeueReusableCellWithIdentifier:wordID];
+        if (wordCell==nil) {
+            wordCell=[MeTableViewCell shareInstance];
+            cell=wordCell;
+            wordCell.backgroundColor=[UIColor blueColor];
+        }
+    }
+    return cell;
 }
+
+#pragma mark ************* fuction
 
 -(void)loadData{
 
+    ApiManager *apiManager=[ApiManager shareManager];
 
+
+    NSDictionary *pare=@{@"c_carrier":carrier,@"c_dbrand":dbrand,@"c_net":net,@"c_resolution":resolution,@"device_id":device_,@"lang":response_language,@"token":tokenn,@"trigger":tirgge,@"user_id":user_,@"v":verson};
+
+
+[apiManager  mewithPare:pare withsuccess:^(id responseBody) {
+    // 1.定义一个字典
+
+    _dobModel=[MeProfileModel mj_objectWithKeyValues:responseBody];
+
+
+
+
+    [self.meTableView reloadData];
+    
+    } withFail:^(id responseBody) {
+
+    }];
 
 }
+
+
+-(void)segmentAction:(UISegmentedControl *)segment{
+    NSInteger index=segment.selectedSegmentIndex;
+    switch (index) {
+        case 0:
+            _meTableView=_dubTableView;
+            break;
+         case 1:
+            _meTableView=_mp3TableView;
+            break;
+         case 2:
+            _meTableView=_wordTabelView;
+        default:
+            break;
+    }
+
+}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

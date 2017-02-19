@@ -1,9 +1,11 @@
 target 'GabriellaXia' do
+pod 'JSONModel'
 pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'MBProgressHUD'
 pod 'ViewDeck'
 pod 'MJRefresh'
 pod 'SVProgressHUD'
+pod 'MJExtension'
 pod 'MMDrawerController'
 end

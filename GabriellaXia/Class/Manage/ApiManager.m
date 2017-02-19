@@ -47,16 +47,16 @@
 
 -(void)mewithPare:(id)pare  withsuccess:(Successblock)successBlock withFail:(FailBlock)failBlock{
 
+    [manager POST:meApi parameters:pare progress:^(NSProgress * _Nonnull uploadProgress) {
 
-[manager POST:apiPOST parameters:pare constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 
-} progress:^(NSProgress * _Nonnull uploadProgress) {
+        successBlock(responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 
-} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        failBlock(error);
+    }];
 
-} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-
-}];
 }
 
 @end

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -12,44 +13,59 @@
             <rect key="frame" x="0.0" y="0.0" width="319" height="169"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="319" height="168"/>
+                <frame key="frameInset" width="319" height="168.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pwv-zU-pVI" userLabel="photoImage" customClass="ThemeImageView">
-                        <frame key="frameInset" minX="129" minY="22" width="60" height="60"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lfc-OC-MYc" userLabel="emailImage">
+                        <color key="backgroundColor" red="0.99781013259999995" green="0.86622735549999996" blue="0.1202161412" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="Rjy-8j-Few"/>
+                            <constraint firstAttribute="height" constant="29" id="fbI-0T-ZMf"/>
+                        </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lfc-OC-MYc" userLabel="emailImage">
-                        <frame key="frameInset" minX="273" minY="8" width="32" height="29"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLm-0Q-vjq" userLabel="name" customClass="ThemeLable">
-                        <frame key="frameInset" minX="107" minY="82" width="104" height="31"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.1843712337" green="0.99781013259999995" blue="0.23131258739999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLu-gv-BMV" userLabel="time" customClass="ThemeLable">
-                        <frame key="frameInset" minX="107" minY="113" width="104" height="20"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="0.41372905230000001" blue="0.39605694699999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qwp-5J-Cqj">
-                        <frame key="frameInset" minX="8" minY="138" width="303" height="29"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UYl-tp-2F1">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLm-0Q-vjq" userLabel="name" customClass="ThemeLable">
+                                <color key="backgroundColor" red="0.1843712337" green="0.26170787919863947" blue="0.23131258739999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="5JY-WX-4Cx"/>
+                                    <constraint firstAttribute="height" constant="20" id="VQ4-Bf-T5F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qwp-5J-Cqj">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38.5" id="6Dh-Ad-SSw"/>
+                        </constraints>
                         <segments>
                             <segment title="配音"/>
                             <segment title="音频"/>
                             <segment title="单词"/>
                         </segments>
                     </segmentedControl>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lev" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ2-SO-Mxf" customClass="ThemeLable">
-                        <frame key="frameInset" minX="212" minY="87" width="41" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lev" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ2-SO-Mxf" customClass="ThemeLable">
+                        <color key="backgroundColor" red="1" green="0.41372905230000001" blue="0.39605694699999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pwv-zU-pVI" userLabel="photoImage" customClass="ThemeImageView">
+                        <color key="backgroundColor" red="0.98615294689999999" green="0.24659162009999999" blue="0.20757366250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="sem-M2-iKb"/>
+                            <constraint firstAttribute="height" constant="60" id="z3C-Od-GBG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLu-gv-BMV" userLabel="time" customClass="ThemeLable">
+                        <frame key="frameInset" minX="108" minY="103" width="104" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="0.41372905230000001" blue="0.39605694699999999" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -57,6 +73,23 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="eJ2-SO-Mxf" firstAttribute="leading" secondItem="pwv-zU-pVI" secondAttribute="trailing" constant="-31" id="6gj-Pt-bSJ"/>
+                    <constraint firstItem="PLm-0Q-vjq" firstAttribute="top" secondItem="pwv-zU-pVI" secondAttribute="bottom" constant="3" id="EG2-85-O1a"/>
+                    <constraint firstItem="lfc-OC-MYc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Pjd-J8-3Wh"/>
+                    <constraint firstItem="qwp-5J-Cqj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="V6W-vy-H5j"/>
+                    <constraint firstItem="PLm-0Q-vjq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="109" id="WUO-FU-PBe"/>
+                    <constraint firstAttribute="bottom" secondItem="qwp-5J-Cqj" secondAttribute="bottom" constant="2" id="akf-1Q-mfN"/>
+                    <constraint firstItem="pwv-zU-pVI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="cma-4w-q5H"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lfc-OC-MYc" secondAttribute="trailing" constant="6" id="cri-S6-auO"/>
+                    <constraint firstItem="pwv-zU-pVI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="iyb-eX-nwQ"/>
+                    <constraint firstItem="PLm-0Q-vjq" firstAttribute="height" secondItem="eJ2-SO-Mxf" secondAttribute="height" id="jXz-QW-w86"/>
+                    <constraint firstItem="PLm-0Q-vjq" firstAttribute="width" secondItem="eJ2-SO-Mxf" secondAttribute="width" id="mbz-S2-PoL"/>
+                    <constraint firstItem="eJ2-SO-Mxf" firstAttribute="leading" secondItem="PLm-0Q-vjq" secondAttribute="trailing" id="oO2-8e-Ev7"/>
+                    <constraint firstAttribute="trailing" secondItem="qwp-5J-Cqj" secondAttribute="trailing" constant="8" id="u1s-rG-xGm"/>
+                    <constraint firstItem="eJ2-SO-Mxf" firstAttribute="top" secondItem="UYl-tp-2F1" secondAttribute="top" id="zHF-Gj-pBV"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="LvLabel" destination="eJ2-SO-Mxf" id="BWj-4O-lRe"/>
@@ -66,7 +99,7 @@
                 <outlet property="segmentedC" destination="qwp-5J-Cqj" id="Opk-1B-UiN"/>
                 <outlet property="timeLabel" destination="uLu-gv-BMV" id="vaE-v7-jTA"/>
             </connections>
-            <point key="canvasLocation" x="13.5" y="-65.5"/>
+            <point key="canvasLocation" x="-610.5" y="-173.5"/>
         </tableViewCell>
     </objects>
 </document>

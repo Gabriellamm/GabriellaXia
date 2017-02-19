@@ -12,6 +12,7 @@
 // manager
 #import "NavigationManager.h"
 #import "ThemeManeger.h"
+#import "ApiManager.h"
 
 #import "LocalizationManager.h"
 #define languageKey @"languageKey"
@@ -20,6 +21,7 @@
 #import "DataSaveTool.h"
 #import "ConstantDefinition.h"
 #import "AppConstants.h"
+#import "NSObject+MJKeyValue.h"
 //tabBar item
 #import "HomeViewController.h"
 #import "MessageViewController.h"
@@ -43,6 +45,7 @@
 
 //netword
 #import "AFNetworking.h"
+
 
 
 

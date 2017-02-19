@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFHTTPSessionManager.h"
 
 typedef void (^Successblock) (id responseBody);
 typedef void (^FailBlock) (id responseBody);
@@ -15,6 +16,8 @@ typedef void (^FailBlock) (id responseBody);
 {
     AFHTTPSessionManager *manager;
 }
+
++(ApiManager *)shareManager;
 
 //meApi
  -(void)mewithPare:(id)pare  withsuccess:(Successblock)successBlock withFail:(FailBlock)failBlock;

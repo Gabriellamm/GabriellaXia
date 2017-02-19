@@ -70,6 +70,16 @@
     ThemeImageView *tabBarView=[[ThemeImageView alloc]initWithFrame:CGRectMake(0, 0, mainScreemWidth, 49)];
     tabBarView.userInteractionEnabled=YES;
     tabBarView.imageName =@"mask_navbar.png";
+
+    //   图片切小了   通过拉伸图片
+//    [tabBarView.image  stretchableImageWithLeftCapWidth:0 topCapHeight:100];
+
+    UIEdgeInsets edge=UIEdgeInsetsMake(20, 20, 20,20);
+  //UIImageResizingModeStretch：拉伸模式，通过拉伸UIEdgeInsets指定的矩形区域来填充图片
+  //UIImageResizingModeTile：平铺模式，通过重复显示UIEdgeInsets指定的矩形区域来填充图
+ [tabBarView.image resizableImageWithCapInsets:edge resizingMode:UIImageResizingModeStretch];
+
+
     [self.tabBar addSubview:tabBarView];
 
     // tabBarItem
