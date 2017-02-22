@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PhotoModel.h"
+
 
 
 @interface MeProfileModel :NSObject
@@ -18,7 +18,9 @@
 @property (nonatomic,copy)NSString *last_auth_method;
 @property (nonatomic,copy)NSString *name;
 
-@property (nonatomic,strong)PhotoModel *Photo;
+@property (nonatomic,strong)NSDictionary *photo;
+
+
 
 
 @property (nonatomic,copy)NSNumber *score_level;//Lv

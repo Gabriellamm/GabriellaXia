@@ -145,22 +145,20 @@
 
 -(void)loadData{
 
-    ApiManager *apiManager=[ApiManager shareManager];
 
-
-    NSDictionary *pare=@{@"c_carrier":carrier,@"c_dbrand":dbrand,@"c_net":net,@"c_resolution":resolution,@"device_id":device_,@"lang":response_language,@"token":tokenn,@"trigger":tirgge,@"user_id":user_,@"v":verson};
-
-
-[apiManager  mewithPare:pare withsuccess:^(id responseBody) {
+[[ApiManager shareManager]  mewithPare:tokenn withsuccess:^(id responseBody) {
     // 1.定义一个字典
 
+
+    [SVProgressHUD  show ];
     _dobModel=[MeProfileModel mj_objectWithKeyValues:responseBody];
+_meHeadTab.namelabel
 
-
-
+    [SVProgressHUD dismiss];
 
     [self.meTableView reloadData];
-    
+
+
     } withFail:^(id responseBody) {
 
     }];

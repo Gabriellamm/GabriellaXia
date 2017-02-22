@@ -20,7 +20,7 @@ typedef void (^FailBlock) (id responseBody);
 +(ApiManager *)shareManager;
 
 //meApi
- -(void)mewithPare:(id)pare  withsuccess:(Successblock)successBlock withFail:(FailBlock)failBlock;
+ -(void)mewithPare:(NSString *)token  withsuccess:(Successblock)successBlock withFail:(FailBlock)failBlock;
 
 
 

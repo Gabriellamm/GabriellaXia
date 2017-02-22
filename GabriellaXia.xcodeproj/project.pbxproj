@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		9808DB781DD9A72B00B11EBD /* MeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9808DB761DD9A72B00B11EBD /* MeTableViewCell.m */; };
 		9808DB791DD9A72B00B11EBD /* MeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9808DB771DD9A72B00B11EBD /* MeTableViewCell.xib */; };
-		9808DB7C1DD9BB5100B11EBD /* PhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9808DB7B1DD9BB5100B11EBD /* PhotoModel.m */; };
 		980A7AF91DB9A68A00316915 /* Skins in Resources */ = {isa = PBXBuildFile; fileRef = 980A7AF81DB9A68A00316915 /* Skins */; };
 		98833A451DD6286600431DF7 /* MeProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98833A441DD6286600431DF7 /* MeProfileModel.m */; };
+		989EF30C1E5C863000354127 /* CryptoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EF3071E5C863000354127 /* CryptoManager.m */; };
+		989EF30D1E5C863000354127 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EF3091E5C863000354127 /* NSData+AESCrypt.m */; };
+		989EF30E1E5C863000354127 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EF30B1E5C863000354127 /* NSString+AESCrypt.m */; };
+		989EF3111E5C86BA00354127 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EF3101E5C86BA00354127 /* DataManager.m */; };
 		98AD05091DBAF5DD00653428 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98AD050B1DBAF5DD00653428 /* Localizable.strings */; };
 		98AD050F1DBAF97D00653428 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD050E1DBAF97D00653428 /* LocalizationManager.m */; };
 		98AD05121DBBC31000653428 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98AD05141DBBC31000653428 /* InfoPlist.strings */; };
@@ -82,11 +85,17 @@
 		9808DB751DD9A72B00B11EBD /* MeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
 		9808DB761DD9A72B00B11EBD /* MeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
 		9808DB771DD9A72B00B11EBD /* MeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeTableViewCell.xib; sourceTree = "<group>"; };
-		9808DB7A1DD9BB5100B11EBD /* PhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoModel.h; sourceTree = "<group>"; };
-		9808DB7B1DD9BB5100B11EBD /* PhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoModel.m; sourceTree = "<group>"; };
 		980A7AF81DB9A68A00316915 /* Skins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Skins; sourceTree = "<group>"; };
 		98833A431DD6286600431DF7 /* MeProfileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeProfileModel.h; sourceTree = "<group>"; };
 		98833A441DD6286600431DF7 /* MeProfileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeProfileModel.m; sourceTree = "<group>"; };
+		989EF3061E5C863000354127 /* CryptoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoManager.h; sourceTree = "<group>"; };
+		989EF3071E5C863000354127 /* CryptoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoManager.m; sourceTree = "<group>"; };
+		989EF3081E5C863000354127 /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESCrypt.h"; sourceTree = "<group>"; };
+		989EF3091E5C863000354127 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
+		989EF30A1E5C863000354127 /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCrypt.h"; sourceTree = "<group>"; };
+		989EF30B1E5C863000354127 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCrypt.m"; sourceTree = "<group>"; };
+		989EF30F1E5C86BA00354127 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		989EF3101E5C86BA00354127 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		98AD05031DBAEFD400653428 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		98AD050A1DBAF5DD00653428 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		98AD050C1DBAF5E800653428 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -216,8 +225,6 @@
 			children = (
 				98833A431DD6286600431DF7 /* MeProfileModel.h */,
 				98833A441DD6286600431DF7 /* MeProfileModel.m */,
-				9808DB7A1DD9BB5100B11EBD /* PhotoModel.h */,
-				9808DB7B1DD9BB5100B11EBD /* PhotoModel.m */,
 			);
 			path = MeModel;
 			sourceTree = "<group>";
@@ -234,6 +241,19 @@
 			children = (
 			);
 			path = MoreModel;
+			sourceTree = "<group>";
+		};
+		989EF3051E5C863000354127 /* AES256 */ = {
+			isa = PBXGroup;
+			children = (
+				989EF3061E5C863000354127 /* CryptoManager.h */,
+				989EF3071E5C863000354127 /* CryptoManager.m */,
+				989EF3081E5C863000354127 /* NSData+AESCrypt.h */,
+				989EF3091E5C863000354127 /* NSData+AESCrypt.m */,
+				989EF30A1E5C863000354127 /* NSString+AESCrypt.h */,
+				989EF30B1E5C863000354127 /* NSString+AESCrypt.m */,
+			);
+			path = AES256;
 			sourceTree = "<group>";
 		};
 		98AD051C1DBD121A00653428 /* MMDrawerLeftAndRight */ = {
@@ -427,6 +447,8 @@
 				98C760101DB7C0B10061DED6 /* ThemeManeger.m */,
 				98AD050D1DBAF97D00653428 /* LocalizationManager.h */,
 				98AD050E1DBAF97D00653428 /* LocalizationManager.m */,
+				989EF30F1E5C86BA00354127 /* DataManager.h */,
+				989EF3101E5C86BA00354127 /* DataManager.m */,
 			);
 			path = Manage;
 			sourceTree = "<group>";
@@ -472,6 +494,7 @@
 		98C75FE31DB77A1E0061DED6 /* SDk */ = {
 			isa = PBXGroup;
 			children = (
+				989EF3051E5C863000354127 /* AES256 */,
 			);
 			path = SDk;
 			sourceTree = "<group>";
@@ -718,7 +741,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C75F701DB5F0E50061DED6 /* AppDelegate.m in Sources */,
-				9808DB7C1DD9BB5100B11EBD /* PhotoModel.m in Sources */,
 				98C75FEA1DB7B7A10061DED6 /* DiscoverViewController.m in Sources */,
 				98C75FFE1DB7B9CB0061DED6 /* LoginViewController.m in Sources */,
 				98AD051B1DBCDF8300653428 /* UIView+Response.m in Sources */,
@@ -726,6 +748,7 @@
 				9808DB781DD9A72B00B11EBD /* MeTableViewCell.m in Sources */,
 				98C75FD71DB77A070061DED6 /* MainTabBarController.m in Sources */,
 				98C75FD31DB77A070061DED6 /* BaseViewController.m in Sources */,
+				989EF30E1E5C863000354127 /* NSString+AESCrypt.m in Sources */,
 				98C75F6D1DB5F0E50061DED6 /* main.m in Sources */,
 				98C75FF91DB7B7E40061DED6 /* MessageViewController.m in Sources */,
 				98C75FD51DB77A070061DED6 /* HomeViewController.m in Sources */,
@@ -743,7 +766,10 @@
 				98AD05301DBD251100653428 /* BaseNavigationViewController.m in Sources */,
 				98AD052C1DBD154300653428 /* BaseViewController+MMDrawerViewController.m in Sources */,
 				98AD05351DBF9E7300653428 /* meHeadTableViewCell.m in Sources */,
+				989EF30D1E5C863000354127 /* NSData+AESCrypt.m in Sources */,
 				98AD05201DBD132500653428 /* LeftViewController.m in Sources */,
+				989EF30C1E5C863000354127 /* CryptoManager.m in Sources */,
+				989EF3111E5C86BA00354127 /* DataManager.m in Sources */,
 				98C75FF41DB7B7CF0061DED6 /* MeViewController.m in Sources */,
 				98C75FEF1DB7B7BB0061DED6 /* MoreViewController.m in Sources */,
 			);

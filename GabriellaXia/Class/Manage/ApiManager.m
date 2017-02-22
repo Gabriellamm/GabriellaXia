@@ -45,13 +45,16 @@
     return self;
 }
 
--(void)mewithPare:(id)pare  withsuccess:(Successblock)successBlock withFail:(FailBlock)failBlock{
+-(void)mewithPare:(NSString *)token  withsuccess:(Successblock)successBlock withFail:(FailBlock)failBlock{
 
+        NSDictionary *pare=@{@"c_carrier":carrier,@"c_dbrand":dbrand,@"c_net":net,@"c_resolution":resolution,@"device_id":device_,@"lang":response_language,@"token":token,@"trigger":tirgge,@"user_id":user_,@"v":verson};
     [manager POST:meApi parameters:pare progress:^(NSProgress * _Nonnull uploadProgress) {
 
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 
         successBlock(responseObject);
+
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 
         failBlock(error);
