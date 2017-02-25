@@ -11,8 +11,12 @@
 #import "MainTabBarController.h"
 #import "LoginViewController.h"
 #include "RegisterViewController.h"
+#import "MeViewController.h"
+#import "MeDubbingViewController.h"
+#import "OudioViewController.h"
+#import "WordViewController.h"
 
-@interface NavigationManager : NSObject
+@interface NavigationManager : NSObject<MeViewControllerDelegate>
 
 +(NavigationManager *)shareManager;
 -(UIViewController *)rootViewController;

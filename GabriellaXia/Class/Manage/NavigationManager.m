@@ -10,6 +10,7 @@
 #import "BaseNavigationViewController.h"
 
 
+
 @implementation NavigationManager
 {
     BaseNavigationViewController *navigationController;
@@ -36,13 +37,21 @@
             MainTabBarController *tabBarC=[[MainTabBarController alloc]init];
             
         navigationController=[[BaseNavigationViewController alloc]initWithRootViewController:tabBarC];
+        navigationController.navigationBarHidden=YES;
             
 //        }else{
 //            LoginViewController *loginVC=[[LoginViewController alloc]init];
 //            navigationController =[[UINavigationController alloc]initWithRootViewController:loginVC];
-
-
+//        navigationController.navigationBarHidden=YES;
 //        }
+
+
+
+        MeViewController *meViewController=[[MeViewController alloc]init];
+        meViewController.delegate=self;
+
+
+
 
     }
     return self;
@@ -52,6 +61,37 @@
 
 }
 
+
+
+
+
+#pragma mark ************* delegate
+//MeViewControllerDelegate
+-(void)didMeViewController:(UIViewController *)controller withObject:(id)object withEvent:(MeViewControllerEvent)event{
+    switch (event) {
+        case DubbingEvent:{
+            MeDubbingViewController  *dubbing=[MeDubbingViewController alloc  ];
+            [navigationController pushViewController:dubbing animated:YES];
+        }
+            break;
+
+        case OudioEvent:{
+
+            OudioViewController *oudio=[[OudioViewController alloc]init];
+            [navigationController pushViewController:oudio animated:YES];
+
+        }
+
+        case WordEvent:{
+            WordViewController *word=[[WordViewController alloc]init];
+            [navigationController pushViewController:word animated:YES];
+        }
+
+            
+
+    }
+
+}
     
 
 @end

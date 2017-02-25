@@ -16,11 +16,10 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *meTableView;
 
-@property (nonatomic,strong)UITableView *dubTableView;
-@property (nonatomic,strong)UITableView *mp3TableView;
-@property (nonatomic,strong)UITableView *wordTabelView;
 @property (nonatomic,strong)MeProfileModel *dobModel;
 @property (nonatomic,strong)meHeadTableViewCell *meHeadTab;
+
+@property (nonatomic,assign)NSInteger _selectedSegmentIndex;//  对比是否要选择 reload
 
 
 @end
@@ -34,9 +33,6 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
 
 
-
-
-
     _meHeadTab=[meHeadTableViewCell shareInstance];
     _meHeadTab.frame=CGRectMake(0, 0, mainScreemWidth, 200);
 
@@ -45,10 +41,18 @@
     [_meHeadTab.segmentedC setTitle:getLocalizedString(@"oudio") forSegmentAtIndex:1];
     [_meHeadTab.segmentedC setTitle:getLocalizedString(@"word") forSegmentAtIndex:2];
     _meHeadTab.segmentedC.selectedSegmentIndex=0; // 默认 0
+    __selectedSegmentIndex=0;
 
-    [_meHeadTab.segmentedC addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventTouchUpInside];
+    [_meHeadTab.segmentedC addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
+    [self.meTableView setTableHeaderView:_meHeadTab];
 
-    [self.view addSubview:_meHeadTab];
+    // 如果要改变 tableview head view
+
+//    [self.meTableView  beginUpdates];
+//    [self.meTableView setTableHeaderView:_meHeadTab];//  新的高度
+//    [self.meTableView endUpdates];
+
+
 
       [self loadData];
 
@@ -62,83 +66,45 @@
 
 
 
-
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
 
-    if (tableView ==_dubTableView) {
-        return 3;
-    }if (tableView==_mp3TableView) {
-        return 2;
-    } else {
-        return 1;
-    }
 
+    return 3;
 
-    return 0;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 20;
+}
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    if (tableView==_dubTableView) {
-        if (section==0) {
+    switch (section) {
+        case 0:
+            return 5;
+            break;
+
+        case 1:
             return 4;
-        }else if (section==1){
-            return 2;
-        }else{
-            return 2;
-        }
-    }if (tableView==_mp3TableView) {
-        return 3;
+            break;
 
-    } else {
+        case 2:
+            return 3;
+            break;
 
-        return 2;
     }
-
+    
     return 0;
 }
 
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    UITableViewCell *cell;
+    MeTableViewCell *cell=[MeTableViewCell shareInstance];
 
 
-    if (tableView==_dubTableView) {
-        static NSString *dobId=@"dobId";
-        MeTableViewCell *dobCell=[tableView dequeueReusableCellWithIdentifier:dobId];// tableview 中找到复用的cell
-        if (dobCell==nil) {
-            dobCell=[MeTableViewCell shareInstance];
-            cell=dobCell;
-            dobCell.backgroundColor=[UIColor redColor];
-
-            
-        }
-
-
-    }else if (tableView==_mp3TableView){
-
-        static NSString *mp3Id=@"mp3Id";
-        MeTableViewCell *mp3Cell=[tableView dequeueReusableCellWithIdentifier:mp3Id];// tableview 中找到复用的cell
-        if (mp3Cell==nil) {
-            mp3Cell=[MeTableViewCell shareInstance];
-            cell=mp3Cell;
-            mp3Cell.backgroundColor=[UIColor yellowColor];
-
-
-        }
-    }else{
-        static  NSString *wordID=@"wordId";
-        MeTableViewCell *wordCell=[tableView dequeueReusableCellWithIdentifier:wordID];
-        if (wordCell==nil) {
-            wordCell=[MeTableViewCell shareInstance];
-            cell=wordCell;
-            wordCell.backgroundColor=[UIColor blueColor];
-        }
-    }
-    return cell;
+       return cell;
 }
 
 #pragma mark ************* fuction
@@ -152,7 +118,7 @@
 
     [SVProgressHUD  show ];
     _dobModel=[MeProfileModel mj_objectWithKeyValues:responseBody];
-_meHeadTab.namelabel
+
 
     [SVProgressHUD dismiss];
 
@@ -167,19 +133,21 @@ _meHeadTab.namelabel
 
 
 -(void)segmentAction:(UISegmentedControl *)segment{
-    NSInteger index=segment.selectedSegmentIndex;
-    switch (index) {
+
+    switch (segment.selectedSegmentIndex) {
         case 0:
-            _meTableView=_dubTableView;
+            [self.delegate didMeViewController:self withObject:nil withEvent:DubbingEvent];
             break;
-         case 1:
-            _meTableView=_mp3TableView;
+            
+       case 1:
+            [self.delegate didMeViewController:self withObject:nil withEvent:OudioEvent];
             break;
-         case 2:
-            _meTableView=_wordTabelView;
-        default:
+
+            case 2:
+            [self.delegate didMeViewController:self withObject:nil withEvent:WordEvent];
             break;
     }
+
 
 }
 

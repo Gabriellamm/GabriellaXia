@@ -8,6 +8,24 @@
 
 #import "BaseViewController.h"
 
+//  segment 有三个跳转     （顾客）
+typedef enum MeViewControllerEvent:NSUInteger{
+    DubbingEvent,
+    OudioEvent,
+    WordEvent
+
+}MeViewControllerEvent;
+
+@protocol MeViewControllerDelegate <NSObject>
+
+-(void)didMeViewController:(UIViewController *)controller withObject:(id)object withEvent:(MeViewControllerEvent)event;
+
+@end
+
 @interface MeViewController : BaseViewController
+
+
+
+@property(weak,nonatomic) id<MeViewControllerDelegate> delegate;
 
 @end

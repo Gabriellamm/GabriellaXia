@@ -58,6 +58,12 @@
 		98C7600B1DB7C0320061DED6 /* ThemeLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C7600A1DB7C0320061DED6 /* ThemeLable.m */; };
 		98C7600E1DB7C0760061DED6 /* ThemeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C7600D1DB7C0760061DED6 /* ThemeButton.m */; };
 		98C760111DB7C0B10061DED6 /* ThemeManeger.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C760101DB7C0B10061DED6 /* ThemeManeger.m */; };
+		98FF68281E61BB3400C46D53 /* MeDubbingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FF68261E61BB3400C46D53 /* MeDubbingViewController.m */; };
+		98FF68291E61BB3400C46D53 /* MeDubbingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98FF68271E61BB3400C46D53 /* MeDubbingViewController.xib */; };
+		98FF682D1E61DBD000C46D53 /* OudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FF682B1E61DBD000C46D53 /* OudioViewController.m */; };
+		98FF682E1E61DBD000C46D53 /* OudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98FF682C1E61DBD000C46D53 /* OudioViewController.xib */; };
+		98FF68321E61DBE600C46D53 /* WordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FF68301E61DBE600C46D53 /* WordViewController.m */; };
+		98FF68331E61DBE600C46D53 /* WordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98FF68311E61DBE600C46D53 /* WordViewController.xib */; };
 		DFBFEB02D676BB03A0D35BE7 /* libPods-GabriellaXia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFDB452BE2B6D377238ADB9 /* libPods-GabriellaXia.a */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +184,15 @@
 		98C7600D1DB7C0760061DED6 /* ThemeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeButton.m; sourceTree = "<group>"; };
 		98C7600F1DB7C0B10061DED6 /* ThemeManeger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManeger.h; sourceTree = "<group>"; };
 		98C760101DB7C0B10061DED6 /* ThemeManeger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManeger.m; sourceTree = "<group>"; };
+		98FF68251E61BB3400C46D53 /* MeDubbingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeDubbingViewController.h; sourceTree = "<group>"; };
+		98FF68261E61BB3400C46D53 /* MeDubbingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeDubbingViewController.m; sourceTree = "<group>"; };
+		98FF68271E61BB3400C46D53 /* MeDubbingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeDubbingViewController.xib; sourceTree = "<group>"; };
+		98FF682A1E61DBD000C46D53 /* OudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OudioViewController.h; sourceTree = "<group>"; };
+		98FF682B1E61DBD000C46D53 /* OudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OudioViewController.m; sourceTree = "<group>"; };
+		98FF682C1E61DBD000C46D53 /* OudioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OudioViewController.xib; sourceTree = "<group>"; };
+		98FF682F1E61DBE600C46D53 /* WordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordViewController.h; sourceTree = "<group>"; };
+		98FF68301E61DBE600C46D53 /* WordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordViewController.m; sourceTree = "<group>"; };
+		98FF68311E61DBE600C46D53 /* WordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WordViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +409,15 @@
 				98C75FF11DB7B7CF0061DED6 /* MeViewController.h */,
 				98C75FF21DB7B7CF0061DED6 /* MeViewController.m */,
 				98C75FF31DB7B7CF0061DED6 /* MeViewController.xib */,
+				98FF68251E61BB3400C46D53 /* MeDubbingViewController.h */,
+				98FF68261E61BB3400C46D53 /* MeDubbingViewController.m */,
+				98FF68271E61BB3400C46D53 /* MeDubbingViewController.xib */,
+				98FF682A1E61DBD000C46D53 /* OudioViewController.h */,
+				98FF682B1E61DBD000C46D53 /* OudioViewController.m */,
+				98FF682C1E61DBD000C46D53 /* OudioViewController.xib */,
+				98FF682F1E61DBE600C46D53 /* WordViewController.h */,
+				98FF68301E61DBE600C46D53 /* WordViewController.m */,
+				98FF68311E61DBE600C46D53 /* WordViewController.xib */,
 				98C75FFB1DB7B9CB0061DED6 /* LoginViewController.h */,
 				98C75FFC1DB7B9CB0061DED6 /* LoginViewController.m */,
 				98C75FFD1DB7B9CB0061DED6 /* LoginViewController.xib */,
@@ -653,10 +677,12 @@
 			files = (
 				980A7AF91DB9A68A00316915 /* Skins in Resources */,
 				98AD05261DBD133600653428 /* RightViewController.xib in Resources */,
+				98FF68331E61DBE600C46D53 /* WordViewController.xib in Resources */,
 				98AD05091DBAF5DD00653428 /* Localizable.strings in Resources */,
 				98C75FD41DB77A070061DED6 /* BaseViewController.xib in Resources */,
 				98AD05311DBD251100653428 /* BaseNavigationViewController.xib in Resources */,
 				98AD05121DBBC31000653428 /* InfoPlist.strings in Resources */,
+				98FF68291E61BB3400C46D53 /* MeDubbingViewController.xib in Resources */,
 				98C760041DB7B9E10061DED6 /* RegisterViewController.xib in Resources */,
 				98C75FF01DB7B7BB0061DED6 /* MoreViewController.xib in Resources */,
 				98C75F7B1DB5F0E50061DED6 /* LaunchScreen.storyboard in Resources */,
@@ -666,6 +692,7 @@
 				98C75FEB1DB7B7A10061DED6 /* DiscoverViewController.xib in Resources */,
 				98C75FFA1DB7B7E40061DED6 /* MessageViewController.xib in Resources */,
 				98C75FF51DB7B7CF0061DED6 /* MeViewController.xib in Resources */,
+				98FF682E1E61DBD000C46D53 /* OudioViewController.xib in Resources */,
 				98C75FFF1DB7B9CB0061DED6 /* LoginViewController.xib in Resources */,
 				98AD05361DBF9E7300653428 /* meHeadTableViewCell.xib in Resources */,
 			);
@@ -746,6 +773,7 @@
 				98AD051B1DBCDF8300653428 /* UIView+Response.m in Sources */,
 				98C75FE11DB77A170061DED6 /* NavigationManager.m in Sources */,
 				9808DB781DD9A72B00B11EBD /* MeTableViewCell.m in Sources */,
+				98FF68281E61BB3400C46D53 /* MeDubbingViewController.m in Sources */,
 				98C75FD71DB77A070061DED6 /* MainTabBarController.m in Sources */,
 				98C75FD31DB77A070061DED6 /* BaseViewController.m in Sources */,
 				989EF30E1E5C863000354127 /* NSString+AESCrypt.m in Sources */,
@@ -754,6 +782,7 @@
 				98C75FD51DB77A070061DED6 /* HomeViewController.m in Sources */,
 				98C75FE21DB77A170061DED6 /* DataSaveTool.m in Sources */,
 				98C7600B1DB7C0320061DED6 /* ThemeLable.m in Sources */,
+				98FF68321E61DBE600C46D53 /* WordViewController.m in Sources */,
 				98AD05391DBFC17800653428 /* ApiManager.m in Sources */,
 				98833A451DD6286600431DF7 /* MeProfileModel.m in Sources */,
 				98C75FE61DB77BB00061DED6 /* AppConstants.m in Sources */,
@@ -770,6 +799,7 @@
 				98AD05201DBD132500653428 /* LeftViewController.m in Sources */,
 				989EF30C1E5C863000354127 /* CryptoManager.m in Sources */,
 				989EF3111E5C86BA00354127 /* DataManager.m in Sources */,
+				98FF682D1E61DBD000C46D53 /* OudioViewController.m in Sources */,
 				98C75FF41DB7B7CF0061DED6 /* MeViewController.m in Sources */,
 				98C75FEF1DB7B7BB0061DED6 /* MoreViewController.m in Sources */,
 			);

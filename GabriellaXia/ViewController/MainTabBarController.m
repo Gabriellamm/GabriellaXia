@@ -35,21 +35,21 @@
 
         HomeViewController *HomeVC=[[HomeViewController alloc]init];
 
-        UINavigationController *homeNV=[[UINavigationController alloc]initWithRootViewController:HomeVC];
+        BaseNavigationViewController *homeNV=[[BaseNavigationViewController alloc]initWithRootViewController:HomeVC];
 
 
     MessageViewController *messageVC=[[MessageViewController alloc]initWithNibName:@"MessageViewController" bundle:nil];
-     UINavigationController *messageNV=[[UINavigationController alloc]initWithRootViewController:messageVC];
+     BaseNavigationViewController *messageNV=[[BaseNavigationViewController alloc]initWithRootViewController:messageVC];
 
 
     MoreViewController *moreVC=[[MoreViewController alloc]initWithNibName:@"MoreViewController" bundle:nil];
-     UINavigationController *moreNV=[[UINavigationController alloc]initWithRootViewController:moreVC];
+     BaseNavigationViewController *moreNV=[[BaseNavigationViewController alloc]initWithRootViewController:moreVC];
 
     DiscoverViewController *discoverVC=[[DiscoverViewController alloc]initWithNibName:@"DiscoverViewController" bundle:nil];
-     UINavigationController *discoverNV=[[UINavigationController alloc]initWithRootViewController:discoverVC];
+     BaseNavigationViewController *discoverNV=[[BaseNavigationViewController alloc]initWithRootViewController:discoverVC];
 
     MeViewController *meVC=[[MeViewController alloc]initWithNibName:@"MeViewController" bundle:nil];
-     UINavigationController *meNV=[[UINavigationController alloc]initWithRootViewController:meVC];
+     BaseNavigationViewController *meNV=[[BaseNavigationViewController alloc]initWithRootViewController:meVC];
         arr=@[homeNV,messageNV,moreNV,discoverNV,meNV];
         self.viewControllers=arr;
 
